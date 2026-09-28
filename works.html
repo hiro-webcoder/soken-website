@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>施工実績 | 蒼建株式会社・架空サイト</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/works.css" />
+<link rel="stylesheet" href="./assets/css/buttons.css">
+    <script src="./assets/js/main.js" defer></script>
+    <script src="./assets/js/works.js" defer></script>
+  </head>
+  <body>
+    <a class="p-works-skip" href="#main">本文へ移動</a>
+    <header class="l-header">
+      <div class="l-header__inner l-container">
+        <a href="./index.html" class="l-header__logo">蒼建株式会社</a>
+        <nav class="p-global-nav" id="global-navigation" aria-label="ナビゲーション" data-menu>
+          <ul class="p-global-nav__list">
+            <li class="p-global-nav__item"><a class="p-global-nav__link" href="./business.html">事業紹介</a></li>
+            <li class="p-global-nav__item"><a class="p-global-nav__link" href="./works.html" aria-current="page">施工実績</a></li>
+            <li class="p-global-nav__item"><a class="p-global-nav__link" href="./company.html">蒼建について</a></li>
+            <li class="p-global-nav__item"><a class="p-global-nav__link" href="./recruit.html">採用情報</a></li>
+            <li class="p-global-nav__item p-global-nav__item--contact"><a class="p-global-nav__link" href="./contact.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+        <button class="p-menu-button" type="button" aria-expanded="false" aria-controls="global-navigation" data-menu-button>
+          <span class="p-menu-button__line"></span><span class="p-menu-button__line"></span><span class="p-menu-button__line"></span>
+          <span class="u-visually-hidden">メニューを開く</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="l-main" id="main">
+      <section class="p-works-page" aria-labelledby="works-title">
+        <div class="l-container p-works-page__inner">
+          <nav class="p-works-breadcrumb" aria-label="パンくず">
+            <ol><li><a href="./index.html">トップページ</a></li><li aria-current="page">施工実績</li></ol>
+          </nav>
+          <div class="p-works-page__heading">
+            <p class="c-section-heading-text">Works</p>
+            <h1 class="c-heading-title" id="works-title">施工実績</h1>
+          </div>
+          <p class="p-works-page__intro">道路・橋梁・排水設備。<br class="p-works-sp-break" />地域の暮らしを支える、蒼建の仕事をご紹介します。</p>
+
+          <div class="p-works-filter" role="group" aria-label="工事種別で絞り込み" hidden>
+            <button type="button" data-work-filter="all" aria-pressed="true" aria-controls="works-list">すべて</button>
+            <button type="button" data-work-filter="road" aria-pressed="false" aria-controls="works-list">道路工事</button>
+            <button type="button" data-work-filter="bridge" aria-pressed="false" aria-controls="works-list">橋梁工事</button>
+            <button type="button" data-work-filter="drainage" aria-pressed="false" aria-controls="works-list">排水設備工事</button>
+          </div>
+          <noscript><p class="p-works-note">すべての施工実績を表示しています。カテゴリの絞り込みにはJavaScriptが必要です。</p></noscript>
+          <div class="p-works-results" id="works-list">
+            <p class="p-works-results__count" role="status" aria-live="polite" aria-atomic="true"><span data-work-label>すべて</span><span><strong data-work-count>3</strong> 件</span></p>
+            <div class="p-work-boxes">
+              <article class="p-work-box" id="work-road" data-work-category="road" aria-labelledby="work-road-title">
+                <a class="p-work-link" href="./work-road.html">
+                  <span class="p-work-img-wrap">
+                    <img class="p-work-img" src="./img/works-road-paving-v1.webp" alt="舗装と白線が整備された市道" width="1536" height="1024" />
+                  </span>
+                  <div class="p-work-content">
+                    <span class="p-work-name">道路工事</span>
+                    <h2 class="p-work-heading" id="work-road-title">市道舗装改修工事</h2>
+                  </div>
+                </a>
+              </article>
+              <article class="p-work-box" id="work-bridge" data-work-category="bridge" aria-labelledby="work-bridge-title">
+                <a class="p-work-link" href="./work-bridge.html">
+                  <span class="p-work-img-wrap">
+                    <img class="p-work-img" src="./img/works-bridge-repair-v1.webp" alt="川を渡る橋梁と周辺の街並み" width="1536" height="1024" />
+                  </span>
+                  <div class="p-work-content">
+                    <span class="p-work-name">橋梁工事</span>
+                    <h2 class="p-work-heading" id="work-bridge-title">河川橋梁点検・補修工事</h2>
+                  </div>
+                </a>
+              </article>
+              <article class="p-work-box" id="work-drainage" data-work-category="drainage" aria-labelledby="work-drainage-title">
+                <a class="p-work-link" href="./work-drainage.html">
+                  <span class="p-work-img-wrap">
+                    <img class="p-work-img" src="./img/works-drainage-improvement-v1.webp" alt="住宅街の道路沿いに整備された排水設備" width="1536" height="1024" />
+                  </span>
+                  <div class="p-work-content">
+                    <span class="p-work-name">排水設備工事</span>
+                    <h2 class="p-work-heading" id="work-drainage-title">住宅地排水設備改修工事</h2>
+                  </div>
+                </a>
+              </article>
+            </div>
+          </div>
+          <p class="p-works-note">掲載内容は架空の施工事例です。写真を選択すると詳細をご覧いただけます。</p>
+        </div>
+      </section>
+
+      <section class="p-contact" id="contact" aria-labelledby="contact-title">
+        <div class="p-contact__inner l-container">
+          <div class="c-heading p-contact__heading"><p class="c-section-heading-text">Contact</p><h2 class="c-heading-title" id="contact-title">お問い合わせ</h2></div>
+          <div class="p-contact__body">
+            <p class="p-contact__dsc">道路・橋梁・排水設備に関するご相談や、業務のご依頼はこちらからお問い合わせください。</p>
+            <a class="p-contact-btn c-action-button" href="./contact.html"><span class="c-action-button__label">お問い合わせフォームへ</span><span class="c-action-button__icon" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="l-footer">
+      <div class="l-footer__inner l-container">
+        <div class="l-footer__top">
+          <a href="./index.html" class="l-footer__logo">蒼建株式会社</a>
+          <nav class="l-footer__nav" aria-label="フッターナビゲーション">
+            <ul class="l-footer-nav">
+              <li><a href="./index.html">トップページ</a></li><li><a href="./business.html">事業紹介</a></li>
+              <li><a href="./works.html">施工実績</a></li><li><a href="./company.html">会社概要</a></li>
+              <li><a href="./recruit.html">採用情報</a></li><li><a href="./contact.html">お問い合わせ</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="l-footer__bottom">
+          <div class="l-footer__meta"><p class="l-footer__note">自主制作の架空サイトです。</p><p class="l-footer__copyright"><small>© 2026 蒼建株式会社</small></p></div>
+          <a class="l-footer__page-top" href="#main" aria-label="ページ上部へ戻る"><span aria-hidden="true">↑</span></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

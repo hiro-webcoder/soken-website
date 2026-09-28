@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+/* 採用ページの社員の声専用。共通セクションには影響させません。 */
+
+.p-recruit-voices {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  margin-inline: -20px;
+  padding: 48px 0 32px;
+  background: var(--blue-pale);
+  border-radius: 44px 0 0 0;
+}
+
+.p-recruit-voices__header {
+  position: relative;
+  padding-inline: 28px;
+  padding-bottom: 24px;
+}
+
+.p-recruit-voices__header h2 {
+  margin-bottom: 0;
+}
+
+.p-recruit-voices__controls {
+  position: absolute;
+  z-index: 2;
+  right: 24px;
+  bottom: -24px;
+  display: flex;
+  gap: 8px;
+}
+
+.p-recruit-voices__controls[hidden] {
+  display: none;
+}
+
+.p-recruit-voices__controls button {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--white);
+  color: var(--blue);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.p-recruit-voices__controls button:hover {
+  background: var(--blue-tint);
+}
+
+.p-recruit-voices__controls button:disabled {
+  color: var(--muted);
+  opacity: .45;
+  cursor: default;
+}
+
+.p-recruit-voices__list {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  list-style: none;
+  padding: 0 28px 8px;
+  margin: 0;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: 28px;
+  scrollbar-width: none;
+}
+
+.p-recruit-voices__list::-webkit-scrollbar {
+  display: none;
+}
+
+.p-recruit-voice {
+  flex: 0 0 84%;
+  min-width: 0;
+  scroll-snap-align: start;
+}
+
+.p-recruit-voice__photo {
+  position: relative;
+}
+
+.p-recruit-voice__photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+.p-recruit-voice__role {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px 12px;
+  border-radius: 0 10px 0 12px;
+  background: var(--blue-pale);
+  color: var(--navy);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.p-recruit-voice__body {
+  padding: 22px 2px 0;
+}
+
+.p-recruit-voice__number {
+  color: var(--blue);
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: .12em;
+}
+
+.p-recruit-voice h3 {
+  margin-top: 8px;
+  color: var(--navy);
+  font-size: 19px;
+  line-height: 1.7;
+}
+
+.p-recruit-voice__story {
+  margin-top: 14px;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.p-recruit-voices__note {
+  padding-inline: 28px;
+  margin-top: 24px;
+  font-size: 11px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+@media (min-width: 768px) {
+  .p-recruit-voices {
+    margin-inline: 0;
+    padding-top: 56px;
+    border-radius: 56px 0 0 0;
+  }
+
+  .p-recruit-voices__header {
+    padding-inline: 40px;
+  }
+
+  .p-recruit-voices__list {
+    padding-inline: 40px;
+    scroll-padding-inline: 40px;
+    gap: 32px;
+  }
+
+  .p-recruit-voice {
+    flex-basis: 44%;
+  }
+
+  .p-recruit-voices__note {
+    padding-inline: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .p-recruit-voices {
+    padding-block: 64px 40px;
+  }
+
+  .p-recruit-voices__header {
+    padding-bottom: 32px;
+  }
+
+  .p-recruit-voices__controls {
+    display: none;
+  }
+
+  .p-recruit-voices__list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    overflow: visible;
+    gap: 28px;
+  }
+
+  .p-recruit-voice:nth-child(2) {
+    margin-top: 44px;
+  }
+
+  .p-recruit-voice h3 {
+    font-size: clamp(18px, 1.55vw, 22px);
+  }
+
+  .p-recruit-voices__note {
+    margin-top: 32px;
+  }
+}

@@ -1,0 +1,421 @@
+@charset "UTF-8";
+
+/* 事業紹介ページ専用。共有デザインはstyle.cssから継承します。 */
+
+.p-business-container {
+  max-width: 1240px;
+}
+
+.p-business-heading {
+  color: var(--navy);
+}
+
+.p-business-heading .c-section-heading-text {
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: .045em;
+}
+
+.p-business-heading .c-heading-title {
+  margin-top: 4px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: .02em;
+}
+
+.p-business-intro {
+  padding-bottom: 48px;
+  background: var(--blue-tint);
+}
+
+.p-business-breadcrumb {
+  padding-block: 20px 32px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.p-business-breadcrumb ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 0;
+  list-style: none;
+}
+
+.p-business-breadcrumb li + li::before {
+  content: "/";
+  margin-right: 12px;
+  color: #8399a8;
+}
+
+.p-business-breadcrumb a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.p-business-intro__lead {
+  margin-top: 28px;
+  color: var(--navy);
+  font-size: clamp(20px, 5.5vw, 24px);
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+.p-business-intro__text {
+  margin-top: 16px;
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 2;
+}
+
+.p-business-pc-break {
+  display: none;
+}
+
+.p-business-intro__visual {
+  margin-top: 28px;
+}
+
+.p-business-intro__visual img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.p-business-services {
+  padding-block: 56px 72px;
+  color: var(--navy);
+}
+
+.p-business-service {
+  scroll-margin-top: calc(var(--header-height) + 24px);
+}
+
+.p-business-service + .p-business-service {
+  margin-top: 64px;
+}
+
+/* DOMも表示もテキスト→写真。横並び時のみ偶数項目を反転します。 */
+
+.p-business-service__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: center;
+}
+
+.p-business-service__body {
+  min-width: 0;
+  margin-right: 24px;
+  padding: 32px 24px 64px;
+  background: var(--blue-pale);
+  border-radius: 0 36px 0 0;
+}
+
+.p-business-service__heading {
+  margin-bottom: 20px;
+}
+
+.p-business-service__heading h2 {
+  font-size: clamp(23px, 5.5vw, 30px);
+  line-height: 1.5;
+}
+
+.p-business-service__body h3 {
+  font-size: clamp(18px, 4.5vw, 22px);
+  line-height: 1.7;
+}
+
+.p-business-service__body > p {
+  margin-top: 16px;
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 2;
+}
+
+.p-business-service__visual {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+  margin: -32px 0 0 24px;
+}
+
+.p-business-service__visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.p-business-project {
+  display: grid;
+  grid-template-columns: 80px minmax(0, 1fr) 24px;
+  align-items: center;
+  gap: 16px;
+  margin-top: 28px;
+  padding: 16px 0;
+  border-block: 1px solid var(--line);
+}
+
+.p-business-project img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.p-business-project__text {
+  display: grid;
+  gap: 6px;
+}
+
+.p-business-project__text > span {
+  color: var(--blue);
+  font-size: 12px;
+}
+
+.p-business-project__text strong {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.p-business-project__arrow {
+  justify-self: end;
+  font-size: 25px;
+}
+
+.p-business-project:hover .p-business-project__text strong {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.p-business-flow {
+  padding-block: 64px;
+  background: #f6f9fc;
+  color: var(--navy);
+}
+
+.p-business-flow__intro {
+  margin-top: 20px;
+  color: var(--ink);
+  font-size: 15px;
+}
+
+.p-business-flow__list {
+  display: grid;
+  gap: 16px;
+  margin-top: 32px;
+  padding: 0;
+  list-style: none;
+}
+
+.p-business-flow__list li {
+  display: grid;
+  grid-template-columns: 36px minmax(0, 1fr);
+  gap: 16px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  background: var(--white);
+}
+
+.p-business-flow__number {
+  color: var(--blue);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.p-business-flow__list h3 {
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.p-business-flow__list p {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.p-business-note {
+  margin-top: 24px;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.p-contact .p-business-note {
+  color: var(--muted);
+}
+
+.l-footer .p-business-note {
+  color: rgb(255 255 255 / 82%);
+}
+
+#main, #contact {
+  scroll-margin-top: calc(var(--header-height) + 24px);
+}
+
+.p-business-skip {
+  position: fixed;
+  top: -100px;
+  left: 20px;
+  z-index: 200;
+  padding: 12px 20px;
+  color: white;
+  background: var(--navy);
+}
+
+.p-business-skip:focus {
+  top: 8px;
+}
+
+.p-business-intro a:focus-visible, .p-business-services a:focus-visible {
+  outline: 3px solid var(--blue-bright);
+  outline-offset: 5px;
+}
+
+@media (min-width: 768px) {
+  .p-business-heading .c-heading-title {
+    font-size: 36px;
+  }
+
+  .p-business-intro {
+    padding-bottom: 64px;
+  }
+
+  .p-business-breadcrumb {
+    padding-block: 24px 48px;
+  }
+
+  .p-business-services {
+    padding-block: 72px 96px;
+  }
+
+  .p-business-service + .p-business-service {
+    margin-top: 88px;
+  }
+
+  .p-business-project {
+    grid-template-columns: 112px minmax(0, 1fr) 48px;
+    gap: 24px;
+    margin-top: 32px;
+  }
+
+  .p-business-project img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .p-business-project__text strong {
+    font-size: 18px;
+  }
+
+  .p-business-project__arrow {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+  }
+
+  .p-business-flow {
+    padding-block: 88px;
+  }
+
+  .p-business-flow__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .p-business-intro__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 48px;
+  }
+
+  .p-business-intro__visual {
+    margin: 0;
+  }
+
+  .p-business-intro__visual img {
+    aspect-ratio: 3 / 2;
+  }
+
+  .p-business-service__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .p-business-service__body {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 48px 80px 48px 40px;
+    border-radius: 0 40px 40px 0;
+  }
+
+  .p-business-service__heading h2 {
+    font-size: 30px;
+  }
+
+  .p-business-service__body > p {
+    font-size: 16px;
+  }
+
+  .p-business-service__visual {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0 0 0 -40px;
+  }
+
+  .p-business-service:nth-child(even) .p-business-service__body {
+    grid-column: 2;
+    padding: 48px 40px 48px 80px;
+    border-radius: 40px 0 0 40px;
+  }
+
+  .p-business-service:nth-child(even) .p-business-service__visual {
+    grid-column: 1;
+    margin: 0 -40px 0 0;
+  }
+
+  .p-business-intro__lead {
+    font-size: 28px;
+  }
+
+  .p-business-intro__text {
+    font-size: 16px;
+  }
+
+  .p-business-pc-break {
+    display: block;
+  }
+
+  .p-business-flow__list {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .p-business-flow__list li {
+    display: block;
+    padding: 24px 18px;
+  }
+
+  .p-business-flow__number {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .p-business-flow__list h3 {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+/* 文字付きCTA共通。ナビゲーション・絞り込み・スライド操作は対象外。 */
+
+.c-action-button:is(a, button) {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  gap: 16px;
+  box-sizing: border-box;
+  width: max-content;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 0;
+  height: auto;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--navy);
+  color: var(--white);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color .2s ease;
+}
+
+.c-action-button__label {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.c-action-button > .c-action-button__icon {
+  position: static;
+  display: grid;
+  place-items: center;
+  flex: 0 0 40px;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--white);
+  color: var(--navy);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1;
+  transform: none;
+}
+
+.c-action-button:is(a, button):hover {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.c-action-button:is(a, button):focus-visible {
+  outline: 3px solid var(--blue-bright);
+  outline-offset: 4px;
+}
+
+.c-action-button:is(a, button):disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .c-action-button:is(a, button) {
+    transition: none;
+  }
+}

@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>蒼建株式会社 | 自主制作・架空サイト</title>
+
+    <meta
+      name="description"
+      content="道路・橋梁・排水設備の整備を通して地域の暮らしを支える、蒼建株式会社を想定した自主制作の架空サイトです。"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/buttons.css" />
+
+    <script src="./assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="l-header">
+      <div class="l-header__inner l-container">
+        <a href="./" class="l-header__logo">蒼建株式会社</a>
+        <nav
+          class="p-global-nav"
+          id="global-navigation"
+          aria-label="ナビゲーション"
+          data-menu
+        >
+          <ul class="p-global-nav__list">
+            <li class="p-global-nav__item">
+              <a class="p-global-nav__link" href="./business.html">事業紹介</a>
+            </li>
+            <li class="p-global-nav__item">
+              <a class="p-global-nav__link" href="./works.html">施工実績</a>
+            </li>
+            <li class="p-global-nav__item">
+              <a class="p-global-nav__link" href="./company.html"
+                >蒼建について</a
+              >
+            </li>
+            <li class="p-global-nav__item">
+              <a class="p-global-nav__link" href="./recruit.html">採用情報</a>
+            </li>
+            <li class="p-global-nav__item p-global-nav__item--contact">
+              <a class="p-global-nav__link" href="./contact.html">
+                お問い合わせ
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <button
+          class="p-menu-button"
+          type="button"
+          aria-expanded="false"
+          aria-controls="global-navigation"
+          data-menu-button
+        >
+          <span class="p-menu-button__line"></span>
+          <span class="p-menu-button__line"></span>
+          <span class="p-menu-button__line"></span>
+
+          <!-- この文字だけ画面から隠す -->
+          <span class="u-visually-hidden">メニューを開く</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main class="l-main" id="main">
+      <section class="p-fv">
+        <div class="p-fv__inner l-container">
+          <h1 class="c-section-heading">
+            <span class="c-section-heading__line"
+              >街の当たり前を、<br class="sp-only" />現場から守る。</span
+            >
+          </h1>
+          <!-- Slider main container -->
+          <div class="p-swiper-container">
+            <div class="swiper p-swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper p-swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide p-swiper-slide">
+                  <div class="p-mv__card-img">
+                    <img
+                      src="./img/road-woman.webp"
+                      alt="道路の舗装状態を道具で丁寧に確認する"
+                    />
+                  </div>
+                  <div class="p-mv__text">
+                    <p class="p-mv__message">道路舗装工事</p>
+                    <h2 class="p-mv__department">
+                      毎日の道を、<br />安全につなぐ。
+                    </h2>
+                  </div>
+                </div>
+
+                <div class="swiper-slide p-swiper-slide">
+                  <div class="p-mv__card-img">
+                    <img
+                      src="./img/bridge-man.webp"
+                      alt="橋の接合部やボルトの状態を注意深く点検する"
+                    />
+                  </div>
+                  <div class="p-mv__text">
+                    <p class="p-mv__message">橋梁の点検・整備</p>
+                    <h2 class="p-mv__department">
+                      渡る安心を、<br />確かな仕事で支える。
+                    </h2>
+                  </div>
+                </div>
+
+                <div class="swiper-slide p-swiper-slide">
+                  <div class="p-mv__card-img">
+                    <img
+                      src="./img/drainage-team.webp"
+                      alt="女性と男性の３人が協力し、道路脇の排水設備を点検する"
+                    />
+                  </div>
+                  <div class="p-mv__text">
+                    <p class="p-mv__message">排水設備の整備</p>
+                    <h2 class="p-mv__department">
+                      雨の日の暮らしを、<br />足元から守る。
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="p-fv__pagination"
+                role="group"
+                aria-label="メインビジュアルの表示切り替え"
+              >
+                <button
+                  class="hero__dot is-active"
+                  type="button"
+                  aria-label="1枚目、道路舗装工事を表示"
+                  aria-current="true"
+                  data-dot="0"
+                >
+                  <svg viewBox="0 0 32 32" aria-hidden="true">
+                    <circle
+                      class="hero__dot-track"
+                      cx="16"
+                      cy="16"
+                      r="13"
+                    ></circle>
+                    <circle
+                      class="hero__dot-progress"
+                      cx="16"
+                      cy="16"
+                      r="13"
+                      style="stroke-dashoffset: 81.6814"
+                    ></circle>
+                  </svg>
+                  <span aria-hidden="true"></span>
+                </button>
+
+                <button
+                  class="hero__dot"
+                  type="button"
+                  aria-label="2枚目、橋梁点検工事を表示"
+                  data-dot="1"
+                >
+                  <svg viewBox="0 0 32 32" aria-hidden="true">
+                    <circle
+                      class="hero__dot-track"
+                      cx="16"
+                      cy="16"
+                      r="13"
+                    ></circle>
+                    <circle
+                      class="hero__dot-progress"
+                      cx="16"
+                      cy="16"
+                      r="13"
+                      style="stroke-dashoffset: 81.6814"
+                    ></circle>
+                  </svg>
+                  <span aria-hidden="true"></span>
+                </button>
+
+                <button
+                  class="hero__dot"
+                  type="button"
+                  aria-label="3枚目、排水設備の整備を表示"
+                  data-dot="2"
+                >
+                  <svg viewBox="0 0 32 32" aria-hidden="true">
+                    <circle
+                      class="hero__dot-track"
+                      cx="16"
+                      cy="16"
+                      r="13"
+                    ></circle>
+                    <circle
+                      class="hero__dot-progress"
+                      cx="16"
+                      cy="16"
+                      r="13"
+                      style="stroke-dashoffset: 81.6814"
+                    ></circle>
+                  </svg>
+                  <span aria-hidden="true"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="p-our-works"
+        id="service"
+        aria-labelledby="our-works-title"
+      >
+        <div class="p-our-works__inner l-container">
+          <div class="c-heading">
+            <p class="c-section-heading-text">Our Works</p>
+            <h2 class="c-heading-title" id="our-works-title">私たちの仕事</h2>
+          </div>
+          <div class="p-our-works-wrap">
+            <article class="p-our-works-content">
+              <img
+                src="./img/service-road-worker-v1.webp"
+                alt="舗装工事の現場で作業を進める道路工事の担当者"
+                class="p-our-works-img"
+                width="1536"
+                height="1024"
+                loading="lazy"
+              />
+              <div class="p-our-works-box">
+                <p class="p-our-works-name">道路工事</p>
+                <h3 class="p-our-works-heading">
+                  路面を確認し、<br />舗装を整える。
+                </h3>
+                <p class="p-our-works-dsc">
+                  路面の傷みや凹凸を確認し、舗装の改修・整備を行います。車や歩行者が安心して通行できる道路を維持します。
+                </p>
+                <a
+                  href="./business.html#road"
+                  class="p-our-works-btn c-action-button"
+                  ><span class="c-action-button__label">詳しく見る</span
+                  ><span class="c-action-button__icon" aria-hidden="true"
+                    >→</span
+                  ></a
+                >
+              </div>
+            </article>
+
+            <article class="p-our-works-content p-our-works-content--reverse">
+              <img
+                src="./img/service-bridge-engineer-v1.webp"
+                alt="橋の接合部を点検する橋梁担当の女性技術者"
+                class="p-our-works-img"
+                width="1536"
+                height="1024"
+                loading="lazy"
+              />
+              <div class="p-our-works-box">
+                <p class="p-our-works-name">橋梁の点検・整備</p>
+                <h3 class="p-our-works-heading">
+                  橋の傷みを点検し、<br />補修につなげる。
+                </h3>
+                <p class="p-our-works-dsc">
+                  橋の接合部やボルトなどの状態を点検し、傷みや異常を確認します。点検結果に応じた整備・補修で、橋の安全を支えます。
+                </p>
+                <a
+                  href="./business.html#bridge"
+                  class="p-our-works-btn c-action-button"
+                  ><span class="c-action-button__label">詳しく見る</span
+                  ><span class="c-action-button__icon" aria-hidden="true"
+                    >→</span
+                  ></a
+                >
+              </div>
+            </article>
+
+            <article class="p-our-works-content">
+              <img
+                src="./img/service-drainage-team-v1.webp"
+                alt="チームで道路脇の排水設備を点検する作業員"
+                class="p-our-works-img"
+                width="1536"
+                height="1024"
+                loading="lazy"
+              />
+              <div class="p-our-works-box">
+                <p class="p-our-works-name">排水設備の整備</p>
+                <h3 class="p-our-works-heading">
+                  排水設備を点検し、<br />水の流れを整える。
+                </h3>
+                <p class="p-our-works-dsc">
+                  道路脇の側溝や排水設備の詰まり・破損を確認し、清掃・整備を行います。雨水が流れる経路を確保し、道路環境を維持します。
+                </p>
+                <a
+                  href="./business.html#drainage"
+                  class="p-our-works-btn c-action-button"
+                  ><span class="c-action-button__label">詳しく見る</span
+                  ><span class="c-action-button__icon" aria-hidden="true"
+                    >→</span
+                  ></a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-work" id="work" aria-labelledby="work-title">
+        <div class="p-work__inner l-container">
+          <div class="c-heading">
+            <p class="c-section-heading-text">Works</p>
+            <h2 class="c-heading-title" id="work-title">施工実績</h2>
+          </div>
+          <div class="p-work-boxes">
+            <article class="p-work-box">
+              <a
+                href="./works.html?category=road#works-list"
+                class="p-work-link"
+              >
+                <span class="p-work-img-wrap">
+                  <img
+                    src="./img/works-road-paving-v1.webp"
+                    alt="舗装と白線が整備された市道"
+                    class="p-work-img"
+                    width="1536"
+                    height="1024"
+                    loading="lazy"
+                  />
+                  <span class="p-work-arrow" aria-hidden="true">→</span>
+                </span>
+                <span class="p-work-content">
+                  <span class="p-work-name">道路工事</span>
+                  <span class="p-work-heading">市道舗装改修工事</span>
+                </span>
+              </a>
+            </article>
+
+            <article class="p-work-box">
+              <a
+                href="./works.html?category=bridge#works-list"
+                class="p-work-link"
+              >
+                <span class="p-work-img-wrap">
+                  <img
+                    src="./img/works-bridge-repair-v1.webp"
+                    alt="川を渡る橋梁と周辺の街並み"
+                    class="p-work-img"
+                    width="1536"
+                    height="1024"
+                    loading="lazy"
+                  />
+                  <span class="p-work-arrow" aria-hidden="true">→</span>
+                </span>
+                <span class="p-work-content">
+                  <span class="p-work-name">橋梁工事</span>
+                  <span class="p-work-heading">河川橋梁点検・補修工事</span>
+                </span>
+              </a>
+            </article>
+
+            <article class="p-work-box">
+              <a
+                href="./works.html?category=drainage#works-list"
+                class="p-work-link"
+              >
+                <span class="p-work-img-wrap">
+                  <img
+                    src="./img/works-drainage-improvement-v1.webp"
+                    alt="住宅街の道路沿いに整備された排水設備"
+                    class="p-work-img"
+                    width="1536"
+                    height="1024"
+                    loading="lazy"
+                  />
+                  <span class="p-work-arrow" aria-hidden="true">→</span>
+                </span>
+                <span class="p-work-content">
+                  <span class="p-work-name">排水設備工事</span>
+                  <span class="p-work-heading">住宅地排水設備改修工事</span>
+                </span>
+              </a>
+            </article>
+          </div>
+          <p class="p-work-note">掲載内容は架空の施工事例です。</p>
+        </div>
+      </section>
+
+      <section class="p-about" id="about" aria-labelledby="about-title">
+        <div class="p-about__inner l-container">
+          <div class="p-about__content">
+            <div class="c-heading p-about__heading">
+              <p class="c-section-heading-text">About</p>
+              <h2 class="c-heading-title" id="about-title">蒼建について</h2>
+            </div>
+            <h3 class="p-about__text">
+              暮らしのすぐそばで、<br />地域を支える会社です。
+            </h3>
+            <p class="p-about__dsc">
+              道路・橋梁・排水設備の整備を通して、地域の安全な暮らしを支える会社です。一つひとつの現場に責任を持ち、街の当たり前をこれからも守り続けます。
+            </p>
+            <a href="./company.html" class="p-about-btn c-action-button"
+              ><span class="c-action-button__label">会社情報を見る</span
+              ><span class="c-action-button__icon" aria-hidden="true"
+                >→</span
+              ></a
+            >
+          </div>
+          <figure class="p-about__visual">
+            <img
+              src="./img/about-s-photo-v1.png"
+              alt="道路・橋梁・排水設備の現場で働く蒼建の社員"
+              width="1103"
+              height="1426"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="p-recruit" id="recruit" aria-labelledby="recruit-title">
+        <picture class="p-recruit__media">
+          <source
+            media="(min-width: 768px)"
+            srcset="./img/recruit-city-pc-v1.webp"
+          />
+          <img
+            src="./img/recruit-city-sp-v1.webp"
+            alt="道路と橋が暮らしをつなぐ地域の街並み"
+            width="780"
+            height="1200"
+            loading="lazy"
+          />
+        </picture>
+        <div class="p-recruit__inner l-container">
+          <div class="c-heading p-recruit__heading">
+            <p class="c-section-heading-text">Recruit</p>
+            <h2 class="c-heading-title" id="recruit-title">採用情報</h2>
+          </div>
+          <h3 class="p-recruit__text">
+            あなたの仕事が、<br />この街の明日をつくる。
+          </h3>
+          <p class="p-recruit__dsc">
+            道路も、橋も、雨の日の安心も。<br />私たちの仕事は、街の景色と暮らしを支えています。
+          </p>
+          <a href="./recruit.html" class="p-recruit-btn c-action-button"
+            ><span class="c-action-button__label">採用情報を見る</span
+            ><span class="c-action-button__icon" aria-hidden="true">→</span></a
+          >
+        </div>
+      </section>
+
+      <section class="p-news" id="news" aria-labelledby="news-title">
+        <div class="p-news__inner l-container">
+          <div class="c-heading p-news__heading">
+            <p class="c-section-heading-text">News</p>
+            <h2 class="c-heading-title" id="news-title">お知らせ</h2>
+          </div>
+          <div class="p-news__body">
+            <ul class="p-news__list">
+              <li class="p-news__item">
+                <a class="p-news__link" href="./news-safety.html">
+                  <span class="p-news__meta">
+                    <time class="p-news__date" datetime="2026-09-01"
+                      >2026.09.01</time
+                    >
+                    <span class="p-news__category">ニュース</span>
+                  </span>
+                  <h3 class="p-news__title">
+                    現場の安全意識を高める社内研修を実施しました
+                  </h3>
+                  <span class="p-news__arrow" aria-hidden="true">→</span>
+                </a>
+              </li>
+              <li class="p-news__item">
+                <a class="p-news__link" href="./news-opening.html">
+                  <span class="p-news__meta">
+                    <time class="p-news__date" datetime="2026-08-01"
+                      >2026.08.01</time
+                    >
+                    <span class="p-news__category">ニュース</span>
+                  </span>
+                  <h3 class="p-news__title">
+                    蒼建株式会社のホームページを公開しました
+                  </h3>
+                  <span class="p-news__arrow" aria-hidden="true">→</span>
+                </a>
+              </li>
+            </ul>
+            <div class="p-news__actions">
+              <a class="p-news__more c-action-button" href="./news.html"
+                ><span class="c-action-button__label">一覧はこちら</span
+                ><span class="c-action-button__icon" aria-hidden="true"
+                  >→</span
+                ></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-contact" id="contact" aria-labelledby="contact-title">
+        <div class="p-contact__inner l-container">
+          <div class="c-heading p-contact__heading">
+            <p class="c-section-heading-text">Contact</p>
+            <h2 class="c-heading-title" id="contact-title">お問い合わせ</h2>
+          </div>
+          <div class="p-contact__body">
+            <p class="p-contact__dsc">
+              道路・橋梁・排水設備に関するご相談や、業務のご依頼はこちらからお問い合わせください。
+            </p>
+            <a href="./contact.html" class="p-contact-btn c-action-button"
+              ><span class="c-action-button__label">お問い合わせフォームへ</span
+              ><span class="c-action-button__icon" aria-hidden="true"
+                >→</span
+              ></a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="l-footer">
+      <div class="l-footer__inner l-container">
+        <div class="l-footer__top">
+          <a href="./" class="l-footer__logo">蒼建株式会社</a>
+          <nav class="l-footer__nav" aria-label="フッターナビゲーション">
+            <ul class="l-footer-nav">
+              <li>
+                <a href="./"
+                  ><span>トップページ</span><span aria-hidden="true">→</span></a
+                >
+              </li>
+              <li>
+                <a href="./business.html"
+                  ><span>事業紹介</span><span aria-hidden="true">→</span></a
+                >
+              </li>
+              <li>
+                <a href="./works.html"
+                  ><span>施工実績</span><span aria-hidden="true">→</span></a
+                >
+              </li>
+              <li>
+                <a href="./company.html"
+                  ><span>会社概要</span><span aria-hidden="true">→</span></a
+                >
+              </li>
+              <li>
+                <a href="./recruit.html"
+                  ><span>採用情報</span><span aria-hidden="true">→</span></a
+                >
+              </li>
+              <li>
+                <a href="./contact.html"
+                  ><span>お問い合わせ</span><span aria-hidden="true">→</span></a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="l-footer__bottom">
+          <div class="l-footer__meta">
+            <p class="l-footer__note">自主制作の架空サイトです。</p>
+            <p class="l-footer__copyright">
+              <small>© 2026 蒼建株式会社</small>
+            </p>
+          </div>
+          <a
+            class="l-footer__page-top"
+            href="#main"
+            aria-label="ページ上部へ戻る"
+          >
+            <span aria-hidden="true">↑</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  </body>
+</html>

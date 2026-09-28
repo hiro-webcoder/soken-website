@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+/* 施工実績一覧専用。カード・ヘッダー・フッターはTOPのデザインを継承。 */
+
+.p-works-page {
+  padding-bottom: 72px;
+  color: var(--navy);
+  background: var(--white);
+}
+
+.p-works-page__inner {
+  max-width: 1240px;
+}
+
+.p-works-breadcrumb {
+  padding-block: 20px 32px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.p-works-breadcrumb ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 0;
+  list-style: none;
+}
+
+.p-works-breadcrumb li + li::before {
+  content: "/";
+  margin-right: 12px;
+  color: #8399a8;
+}
+
+.p-works-breadcrumb a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.p-works-page__heading .c-section-heading-text {
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: .045em;
+}
+
+.p-works-page__heading .c-heading-title {
+  margin-top: 4px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: .02em;
+}
+
+.p-works-page__intro {
+  margin-top: 24px;
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 2;
+}
+
+.p-works-filter {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 32px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--blue-tint);
+}
+
+.p-works-filter button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  min-width: 0;
+  min-height: 48px;
+  padding: 10px 8px;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: var(--white);
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.p-works-filter button span {
+  flex-shrink: 0;
+  font-size: 14px;
+}
+
+.p-works-filter button[aria-pressed="true"] {
+  color: var(--white);
+  background: var(--navy);
+  border-color: var(--navy);
+}
+
+.p-works-filter button:hover:not([aria-pressed="true"]) {
+  border-color: var(--blue);
+  background: var(--blue-pale);
+}
+
+.p-works-filter button:focus-visible, .p-works-breadcrumb a:focus-visible {
+  outline: 3px solid var(--blue-bright);
+  outline-offset: 3px;
+}
+
+.p-works-results {
+  margin-top: 28px;
+  scroll-margin-top: calc(var(--header-height) + 24px);
+}
+
+.p-works-results__count {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.p-works-results__count strong {
+  margin-right: 4px;
+  color: var(--navy);
+  font-size: 20px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.p-works-page .p-work-box {
+  scroll-margin-top: calc(var(--header-height) + 24px);
+}
+
+.p-works-page .p-work-link[aria-disabled="true"] {
+  cursor: default;
+}
+
+.p-works-page .p-work-link[aria-disabled="true"]:hover .p-work-img {
+  transform: none;
+}
+
+.p-works-note {
+  margin-top: 24px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.p-works-skip {
+  position: fixed;
+  top: -100px;
+  left: 20px;
+  z-index: 200;
+  padding: 12px 20px;
+  color: var(--white);
+  background: var(--navy);
+}
+
+.p-works-skip:focus {
+  top: 8px;
+}
+
+#main, #contact {
+  scroll-margin-top: calc(var(--header-height) + 24px);
+}
+
+@media (min-width: 768px) {
+  .p-works-page {
+    padding-bottom: 96px;
+  }
+
+  .p-works-breadcrumb {
+    padding-block: 24px 48px;
+  }
+
+  .p-works-page__heading .c-heading-title {
+    font-size: 36px;
+  }
+
+  .p-works-page__intro {
+    font-size: 16px;
+  }
+
+  .p-works-sp-break {
+    display: none;
+  }
+
+  .p-works-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 48px;
+    padding: 24px;
+  }
+
+  .p-works-filter button {
+    gap: 24px;
+    min-width: 132px;
+    padding-inline: 18px;
+    font-size: 14px;
+  }
+
+  .p-works-results {
+    margin-top: 32px;
+  }
+
+  .p-works-results__count {
+    margin-bottom: 24px;
+  }
+}
