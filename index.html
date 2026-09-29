@@ -19,7 +19,7 @@
 
     <script src="./assets/js/main.js" defer></script>
   </head>
-  <body>
+  <body class="p-home">
     <!-- header -->
     <header class="l-header">
       <div class="l-header__inner l-container">
@@ -42,7 +42,7 @@
                 >蒼建について</a
               >
             </li>
-            <li class="p-global-nav__item">
+            <li class="p-global-nav__item p-global-nav__item--recruit-cta">
               <a class="p-global-nav__link" href="./recruit.html">採用情報</a>
             </li>
             <li class="p-global-nav__item p-global-nav__item--contact">
@@ -210,6 +210,45 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="p-numbers" aria-labelledby="numbers-title">
+        <div class="p-numbers__inner l-container">
+          <div class="c-heading p-numbers__heading">
+            <p class="c-section-heading-text">Soken in Numbers</p>
+            <h2 class="c-heading-title" id="numbers-title">数字で見る蒼建</h2>
+          </div>
+          <p class="p-numbers__intro">
+            地域の現場で積み重ねてきた歩みを、3つの数字でご紹介します。
+          </p>
+          <ul class="p-numbers__list">
+            <li class="p-numbers__card">
+              <p class="p-numbers__label">累計施工実績</p>
+              <svg class="p-numbers__icon" viewBox="0 -960 960 960" aria-hidden="true">
+                <path d="M159-169q-50 0-84.5-35T40-289v-240q0-33 23.5-56.5T120-609h200v-200h200q50 0 85 35t35 85v160h39v-47q0-16 6.5-31t17.5-26l77-76 179 340H759q-33 0-56.5-23.5T679-449h-40v70q20 17 30.5 40.5T680-289q0 50-35 85t-85 35q-38 0-69-22t-45-58H273q-14 36-45 58t-69 22Zm0-80q17 0 29-11.5t12-28.5q0-17-11.5-28.5T160-329q-17 0-28.5 11.5T120-289q0 17 11 28.5t28 11.5Zm401 0q17 0 28.5-11.5T600-289q0-17-11.5-28.5T560-329q-17 0-28.5 11.5T520-289q0 17 11.5 28.5T560-249Zm-240-80v-200H120v127q10-4 19.5-5.5T160-409q38 0 69 22t44 58h47Zm80 0h46q13-36 44.5-58t69.5-22v-40H400v120Zm427-120-67-127v127h67Zm-427-80h160v-160q0-17-11.5-28.5T520-729H400v200Zm-80 200v-80 7-127 200Zm80 0v-120 120Z" />
+              </svg>
+              <p class="p-numbers__value"><span class="p-numbers__figure">120</span><span class="p-numbers__unit">件</span></p>
+              <p class="p-numbers__detail">道路・橋梁・排水設備の工事</p>
+            </li>
+            <li class="p-numbers__card">
+              <p class="p-numbers__label">創業から</p>
+              <svg class="p-numbers__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 21V7h4V3h10v8h4v10h-8v-4h-2v4zm2-2h2v-2H5zm0-4h2v-2H5zm0-4h2V9H5zm4 4h2v-2H9zm0-4h2V9H9zm0-4h2V5H9zm4 8h2v-2h-2zm0-4h2V9h-2zm0-4h2V5h-2zm4 12h2v-2h-2zm0-4h2v-2h-2z" />
+              </svg>
+              <p class="p-numbers__value"><span class="p-numbers__figure">20</span><span class="p-numbers__unit">年</span></p>
+              <p class="p-numbers__detail">2006年創業</p>
+            </li>
+            <li class="p-numbers__card">
+              <p class="p-numbers__label">有資格者</p>
+              <svg class="p-numbers__icon" viewBox="0 -960 960 960" aria-hidden="true">
+                <path d="m387-412 35-114-92-74h114l36-112 36 112h114l-93 74 35 114-92-71-93 71ZM240-40v-309q-38-42-59-96t-21-115q0-134 93-227t227-93q134 0 227 93t93 227q0 61-21 115t-59 96v309l-240-80-240 80Zm240-280q100 0 170-70t70-170q0-100-70-170t-170-70q-100 0-170 70t-70 170q0 100 70 170t170 70ZM320-159l160-41 160 41v-124q-35 20-75.5 31.5T480-240q-44 0-84.5-11.5T320-283v124Zm160-62Z" />
+              </svg>
+              <p class="p-numbers__value"><span class="p-numbers__figure">8</span><span class="p-numbers__unit">名</span></p>
+              <p class="p-numbers__detail">現場を支える専門資格</p>
+            </li>
+          </ul>
+          <p class="p-numbers__note">※数値は架空サイトの設定です（2026年9月時点）。</p>
         </div>
       </section>
 
@@ -524,6 +563,14 @@
         </div>
       </section>
     </main>
+
+    <a class="p-recruit-fixed" href="./recruit.html">
+      <span>採用情報を見る</span>
+      <svg class="p-recruit-fixed__icon" viewBox="0 0 32 28" aria-hidden="true" focusable="false">
+        <rect x="6" y="2" width="24" height="20" />
+        <rect x="2" y="6" width="24" height="20" />
+      </svg>
+    </a>
 
     <!-- footer -->
     <footer class="l-footer">
