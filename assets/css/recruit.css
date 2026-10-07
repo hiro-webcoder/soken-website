@@ -36,7 +36,7 @@
 .p-recruit-paths__label {
   margin-bottom: 6px;
   color: var(--blue);
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -142,7 +142,7 @@
   border-radius: 0 10px 0 12px;
   background: var(--blue-pale);
   color: var(--navy);
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -152,7 +152,7 @@
 
 .p-recruit-voice__number {
   color: var(--blue);
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 700;
   letter-spacing: .12em;
 }
@@ -166,14 +166,14 @@
 
 .p-recruit-voice__story {
   margin-top: 14px;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.9;
 }
 
 .p-recruit-voices__note {
   padding-inline: 28px;
   margin-top: 24px;
-  font-size: 11px;
+  font-size: 18px;
   line-height: 1.8;
   color: var(--muted);
 }

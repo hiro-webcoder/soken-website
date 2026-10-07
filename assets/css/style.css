@@ -38,7 +38,7 @@ body {
   background-color: var(--color-bg-primary);
   color: var(--color-text-primary);
   font-family: var(--font-family-ja);
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.8;
 }
 
@@ -151,7 +151,7 @@ body {
   display: flex;
   align-items: center;
   min-height: 64px;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 600;
 }
 
@@ -172,7 +172,7 @@ body {
   background-color: var(--navy);
   box-shadow: 0 -3px 14px rgb(16 61 104 / 18%);
   color: var(--white);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 1.4;
   text-align: center;
@@ -305,7 +305,7 @@ body.is-menu-open {
 
 .p-mv__message {
   color: var(--blue);
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 1.6;
 }
@@ -427,7 +427,7 @@ body.is-menu-open {
 
 .p-numbers__heading .c-section-heading-text {
   color: var(--blue);
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   letter-spacing: 0.045em;
 }
@@ -467,7 +467,7 @@ body.is-menu-open {
 
 .p-numbers__label {
   color: var(--navy);
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.06em;
 }
@@ -505,13 +505,13 @@ body.is-menu-open {
   margin-top: auto;
   padding-top: 8px;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 18px;
 }
 
 .p-numbers__note {
   margin-top: 14px;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 18px;
 }
 
 /* our works */
@@ -532,7 +532,7 @@ body.is-menu-open {
 
 .p-our-works .c-section-heading-text {
   color: var(--blue);
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 1.6;
   letter-spacing: 0.045em;
@@ -558,7 +558,7 @@ body.is-menu-open {
 
 .p-our-works-name {
   color: var(--blue);
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 1.6;
   letter-spacing: 0.045em;
@@ -575,7 +575,7 @@ body.is-menu-open {
 .p-our-works-dsc {
   margin-top: 16px;
   color: var(--ink);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.95;
   line-break: strict;
@@ -588,7 +588,7 @@ body.is-menu-open {
   gap: 14px;
   min-height: 48px;
   margin-top: 24px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   text-align: left;
 }
@@ -640,7 +640,7 @@ body.is-menu-open {
 
 .p-work .c-section-heading-text {
   color: var(--blue);
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 1.6;
   letter-spacing: 0.045em;
@@ -711,7 +711,7 @@ body.is-menu-open {
 
 .p-work-name {
   color: var(--blue);
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 1.6;
   letter-spacing: 0.045em;
@@ -737,7 +737,7 @@ body.is-menu-open {
 .p-work-note {
   margin-top: 20px;
   color: var(--muted);
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.8;
 }
 
@@ -767,7 +767,7 @@ body.is-menu-open {
 
 .p-about .c-section-heading-text {
   color: var(--blue);
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 1.6;
   letter-spacing: 0.045em;
@@ -807,7 +807,7 @@ body.is-menu-open {
 .p-about__dsc {
   margin-top: 24px;
   color: var(--ink);
-  font-size: 16px;
+  font-size: 18px;
   line-height: 2;
   line-break: strict;
   overflow-wrap: anywhere;
@@ -819,7 +819,7 @@ body.is-menu-open {
   gap: 16px;
   min-height: 56px;
   margin-top: 32px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -890,7 +890,7 @@ body.is-menu-open {
 }
 
 .p-recruit .c-section-heading-text {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 1.6;
   letter-spacing: 0.06em;
@@ -914,7 +914,7 @@ body.is-menu-open {
 
 .p-recruit__dsc {
   margin-top: 28px;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 2;
 }
 
@@ -925,7 +925,7 @@ body.is-menu-open {
   gap: 16px;
   min-height: 56px;
   margin-top: 36px;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -972,7 +972,7 @@ body.is-menu-open {
 
 .p-news .c-section-heading-text {
   color: var(--blue);
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 1.6;
   letter-spacing: 0.045em;
@@ -1019,7 +1019,7 @@ body.is-menu-open {
 
 .p-news__date {
   color: var(--ink);
-  font-size: 14px;
+  font-size: 18px;
   font-variant-numeric: tabular-nums;
   line-height: 1.6;
 }
@@ -1034,7 +1034,7 @@ body.is-menu-open {
   border-radius: 999px;
   color: var(--white);
   background-color: var(--navy);
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 1.6;
 }
@@ -1042,7 +1042,7 @@ body.is-menu-open {
 .p-news__title {
   min-width: 0;
   color: var(--ink);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 1.8;
   overflow-wrap: anywhere;
@@ -1066,7 +1066,7 @@ body.is-menu-open {
   align-items: center;
   gap: 14px;
   min-height: 56px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
 }
 
@@ -1100,7 +1100,7 @@ body.is-menu-open {
 .p-news__note {
   margin-top: 24px;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 18px;
   line-height: 1.8;
 }
 
@@ -1122,7 +1122,7 @@ body.is-menu-open {
 
 .p-contact .c-section-heading-text {
   color: var(--blue);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 1.6;
   letter-spacing: 0.045em;
@@ -1142,7 +1142,7 @@ body.is-menu-open {
 
 .p-contact__dsc {
   color: var(--ink);
-  font-size: 16px;
+  font-size: 18px;
   line-height: 2;
   overflow-wrap: anywhere;
 }
@@ -1162,7 +1162,7 @@ body.is-menu-open {
   border-radius: 999px;
   color: var(--white);
   background-color: var(--navy);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   transition: background-color 0.2s ease;
 }
@@ -1230,7 +1230,7 @@ body.is-menu-open {
   align-items: center;
   justify-content: space-between;
   min-height: 64px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .l-footer-nav a span:last-child {
@@ -1251,7 +1251,7 @@ body.is-menu-open {
 .l-footer__note,
 .l-footer__copyright {
   color: rgb(255 255 255 / 82%);
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.8;
 }
 
@@ -1449,7 +1449,7 @@ body.is-menu-open {
   }
 
   .p-work-name {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .p-work-heading {
@@ -1613,7 +1613,7 @@ body.is-menu-open {
   .l-footer-nav a {
     min-width: 120px;
     min-height: 40px;
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .l-footer-nav a span:last-child {
@@ -1756,7 +1756,7 @@ body.is-menu-open {
   .p-global-nav__item {
     list-style: none;
     border-bottom: 0;
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .p-global-nav__link {
@@ -1849,7 +1849,7 @@ body.is-menu-open {
 
   .p-about__dsc {
     max-width: 560px;
-    font-size: 17px;
+    font-size: 18px;
   }
 
   /* Object / Utility（u-） */

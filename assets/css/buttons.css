@@ -21,7 +21,7 @@
   background: var(--navy);
   color: var(--white);
   font-family: inherit;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 1.5;
   text-align: center;
@@ -57,6 +57,24 @@
   color: var(--white);
 }
 
+.p-contact-btn.c-action-button {
+  transition: background-color .2s ease, color .2s ease;
+}
+
+.p-contact-btn.c-action-button > .c-action-button__icon {
+  transition: background-color .2s ease, color .2s ease;
+}
+
+.p-contact-btn.c-action-button:hover {
+  background: var(--white);
+  color: var(--navy);
+}
+
+.p-contact-btn.c-action-button:hover > .c-action-button__icon {
+  background: var(--navy);
+  color: var(--white);
+}
+
 .c-action-button:is(a, button):focus-visible {
   outline: 3px solid var(--blue-bright);
   outline-offset: 4px;
@@ -69,6 +87,10 @@
 
 @media (prefers-reduced-motion: reduce) {
   .c-action-button:is(a, button) {
+    transition: none;
+  }
+
+  .p-contact-btn.c-action-button > .c-action-button__icon {
     transition: none;
   }
 }
