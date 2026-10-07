@@ -15,7 +15,7 @@
 .p-works-breadcrumb {
   padding-block: 20px 32px;
   color: var(--muted);
-  font-size: 18px;
+  font-size: 12px;
 }
 
 .p-works-breadcrumb ol {
@@ -39,7 +39,7 @@
 
 .p-works-page__heading .c-section-heading-text {
   color: var(--blue);
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 1.6;
   letter-spacing: .045em;
@@ -56,7 +56,7 @@
 .p-works-page__intro {
   margin-top: 24px;
   color: var(--ink);
-  font-size: 18px;
+  font-size: 15px;
   line-height: 2;
 }
 
@@ -83,14 +83,14 @@
   border-radius: 3px;
   background: var(--white);
   color: var(--blue);
-  font-size: 18px;
+  font-size: 13px;
   font-weight: 600;
   line-height: 1.6;
 }
 
 .p-works-filter button span {
   flex-shrink: 0;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .p-works-filter button[aria-pressed="true"] {
@@ -121,7 +121,7 @@
   gap: 16px;
   margin-bottom: 20px;
   color: var(--muted);
-  font-size: 18px;
+  font-size: 13px;
 }
 
 .p-works-results__count strong {
@@ -147,7 +147,7 @@
 .p-works-note {
   margin-top: 24px;
   color: var(--muted);
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.8;
 }
 
@@ -183,7 +183,7 @@
   }
 
   .p-works-page__intro {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .p-works-sp-break {
@@ -202,7 +202,7 @@
     gap: 24px;
     min-width: 132px;
     padding-inline: 18px;
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .p-works-results {

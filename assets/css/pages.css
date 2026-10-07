@@ -19,7 +19,7 @@
 .p-sub-breadcrumb {
   padding-block: 22px 34px;
   color: var(--muted);
-  font-size: 18px;
+  font-size: 12px;
 }
 
 .p-sub-breadcrumb ol {
@@ -50,7 +50,7 @@
 
 .p-sub-heading > p {
   color: var(--blue);
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: .045em;
 }
@@ -91,7 +91,7 @@
 .p-sub-section-header > p {
   color: var(--blue);
   font-weight: 600;
-  font-size: 18px;
+  font-size: 14px;
   margin-bottom: 4px;
 }
 
@@ -120,7 +120,7 @@
 .p-sub-figure figcaption {
   margin-top: 8px;
   color: var(--muted);
-  font-size: 18px;
+  font-size: 12px;
 }
 
 .p-sub-jumps {
@@ -155,7 +155,7 @@
 
 .p-sub-panel .p-sub-number {
   color: var(--blue);
-  font-size: 18px;
+  font-size: 14px;
   letter-spacing: .08em;
 }
 
@@ -197,7 +197,7 @@
   padding: 16px 20px;
   background: var(--blue-tint);
   border-left: 3px solid var(--blue);
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.9;
   margin-block: 24px;
 }
@@ -255,7 +255,7 @@
   flex-wrap: wrap;
   gap: 24px;
   margin-top: 24px;
-  font-size: 18px;
+  font-size: 12px;
 }
 
 .p-sub-footer-links a {
@@ -345,7 +345,7 @@
   border-radius: 50%;
   background: var(--navy);
   color: white;
-  font-size: 18px;
+  font-size: 12px;
 }
 
 .p-sub-timeline h3 {
@@ -380,7 +380,7 @@
   flex-wrap: wrap;
   color: var(--muted);
   margin-bottom: 24px;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .p-sub-stepper {
@@ -396,7 +396,7 @@
   padding: 14px 6px;
   text-align: center;
   border-bottom: 3px solid var(--line);
-  font-size: 18px;
+  font-size: 13px;
   color: var(--muted);
 }
 
@@ -408,7 +408,7 @@
 
 .p-sub-stepper span {
   display: block;
-  font-size: 18px;
+  font-size: 12px;
 }
 
 .p-sub-form {
@@ -431,7 +431,7 @@
   display: inline-block;
   color: #fff;
   background: var(--navy);
-  font-size: 18px;
+  font-size: 11px;
   padding: 1px 6px;
   margin-left: 12px;
   vertical-align: middle;
@@ -461,7 +461,7 @@
 .p-sub-error {
   color: #a11c1c;
   margin-top: 8px;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .p-sub-error-summary {

@@ -1,254 +1,153 @@
 <!doctype html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>蒼建株式会社 | 自主制作・架空サイト</title>
 
-    <meta
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preload" as="image" href="./img/hero/01-residential-road.png" />
+    <title>蒼建株式会社 | 自主制作・架空サイト</title>
+<meta
       name="description"
       content="道路・橋梁・排水設備の整備を通して地域の暮らしを支える、蒼建株式会社を想定した自主制作の架空サイトです。"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/buttons.css" />
+<meta name="robots" content="noindex, nofollow" />
+<link rel="stylesheet" href="./assets/css/reset.css?ver=1790602413" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css?ver=12" />
+<link rel="stylesheet" href="./assets/css/style.css?ver=1790776341" />
+<link rel="stylesheet" href="./assets/css/buttons.css?ver=1790922873" />
+<link rel="stylesheet" href="./assets/css/home-hero.css?ver=1790920503" />
+<link rel="stylesheet" href="./assets/css/site-brand.css?ver=1790924955" />
+<link rel="stylesheet" href="./assets/css/site-footer.css?ver=1790925560" />
+<link rel="stylesheet" href="./assets/css/home-layout.css?ver=1790923806" />
 
-    <script src="./assets/js/main.js" defer></script>
-  </head>
-  <body class="p-home">
-    <!-- header -->
-    <header class="l-header">
-      <div class="l-header__inner l-container">
-        <a href="./" class="l-header__logo">蒼建株式会社</a>
-        <nav
-          class="p-global-nav"
-          id="global-navigation"
-          aria-label="ナビゲーション"
-          data-menu
-        >
-          <ul class="p-global-nav__list">
-            <li class="p-global-nav__item">
-              <a class="p-global-nav__link" href="./business.html">事業紹介</a>
-            </li>
-            <li class="p-global-nav__item">
-              <a class="p-global-nav__link" href="./works.html">施工実績</a>
-            </li>
-            <li class="p-global-nav__item">
-              <a class="p-global-nav__link" href="./company.html"
-                >蒼建について</a
-              >
-            </li>
-            <li class="p-global-nav__item p-global-nav__item--recruit-cta">
-              <a class="p-global-nav__link" href="./recruit.html">採用情報</a>
-            </li>
-            <li class="p-global-nav__item p-global-nav__item--contact">
-              <a class="p-global-nav__link" href="./contact.html">
-                お問い合わせ
-              </a>
-            </li>
-          </ul>
-        </nav>
+</head>
 
-        <button
-          class="p-menu-button"
-          type="button"
-          aria-expanded="false"
-          aria-controls="global-navigation"
-          data-menu-button
-        >
-          <span class="p-menu-button__line"></span>
-          <span class="p-menu-button__line"></span>
-          <span class="p-menu-button__line"></span>
-
-          <!-- この文字だけ画面から隠す -->
-          <span class="u-visually-hidden">メニューを開く</span>
-        </button>
-      </div>
+<body class="soken-home is-hero-visible">
+        <a class="skip-link" href="#main">本文へ進む</a>
+    <header class="site-header">
+      <a class="brand soken-brand" href="./index.html" aria-label="蒼建株式会社 トップページ">
+        <span class="soken-brand__crop" aria-hidden="true">
+  <img class="soken-brand__image" src="./img/brand/soken-road-logo-v2.png" alt="" width="1942" height="809" decoding="async" />
+</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="global-navigation" aria-label="メニューを開く" hidden>
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="navigation" id="global-navigation" aria-label="ナビゲーション">
+        <ul>
+          <li><a href="./business.html">事業紹介</a></li>
+          <li><a href="./works.html">施工実績</a></li>
+          <li><a href="./company.html">会社概要</a></li>
+          <li><a href="./recruit.html">採用情報</a></li>
+          <li><a href="./contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- main -->
     <main class="l-main" id="main">
-      <section class="p-fv">
-        <div class="p-fv__inner l-container">
-          <h1 class="c-section-heading">
-            <span class="c-section-heading__line"
-              >街の当たり前を、<br class="sp-only" />現場から守る。</span
-            >
-          </h1>
-          <!-- Slider main container -->
-          <div class="p-swiper-container">
-            <div class="swiper p-swiper">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper p-swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide p-swiper-slide">
-                  <div class="p-mv__card-img">
-                    <img
-                      src="./img/road-woman.webp"
-                      alt="道路の舗装状態を道具で丁寧に確認する"
-                    />
-                  </div>
-                  <div class="p-mv__text">
-                    <p class="p-mv__message">道路舗装工事</p>
-                    <h2 class="p-mv__department">
-                      毎日の道を、<br />安全につなぐ。
-                    </h2>
-                  </div>
-                </div>
+            <section class="hero" aria-labelledby="hero-title" aria-roledescription="カルーセル">
+        <div class="hero__photos">
+          <div class="hero__slide is-active" data-slide aria-hidden="false">
+            <img src="./img/hero/01-residential-road.png" alt="舗装が整った住宅地の生活道路の完成イメージ" fetchpriority="high" width="1672" height="941" />
+          </div>
+          <div class="hero__slide" data-slide aria-hidden="true">
+            <img src="./img/hero/02-river-bridge.png" alt="地域の川を渡る橋梁の完成イメージ" decoding="async" width="1672" height="941" />
+          </div>
+          <div class="hero__slide" data-slide aria-hidden="true">
+            <img src="./img/hero/03-drainage-road.png" alt="側溝と路面が整備された住宅地の道路の完成イメージ" decoding="async" width="1672" height="941" />
+          </div>
+          <div class="hero__slide" data-slide aria-hidden="true">
+            <img src="./img/hero/04-mountain-road.png" alt="山間の集落へ続く道路の補修後のイメージ" decoding="async" width="1672" height="941" />
+          </div>
+          <div class="hero__slide" data-slide aria-hidden="true">
+            <img src="./img/hero/05-repaired-bridge.png" alt="川沿いの風景に馴染む橋の補修後のイメージ" decoding="async" width="1672" height="941" />
+          </div>
+        </div>
+        <div class="hero__shade" aria-hidden="true"></div>
+        <div class="hero__copy">
+          <h1 id="hero-title"><span>街の当たり前を、</span><span>現場から守る。</span></h1>
+        </div>
 
-                <div class="swiper-slide p-swiper-slide">
-                  <div class="p-mv__card-img">
-                    <img
-                      src="./img/bridge-man.webp"
-                      alt="橋の接合部やボルトの状態を注意深く点検する"
-                    />
-                  </div>
-                  <div class="p-mv__text">
-                    <p class="p-mv__message">橋梁の点検・整備</p>
-                    <h2 class="p-mv__department">
-                      渡る安心を、<br />確かな仕事で支える。
-                    </h2>
-                  </div>
-                </div>
+        <div class="slide-controls" aria-label="写真の切り替え" hidden>
+          <div class="slide-controls__dots">
+            <button type="button" data-go="0" aria-label="1枚目：生活道路" aria-current="true"><span></span></button>
+            <button type="button" data-go="1" aria-label="2枚目：河川の橋梁"><span></span></button>
+            <button type="button" data-go="2" aria-label="3枚目：排水設備"><span></span></button>
+            <button type="button" data-go="3" aria-label="4枚目：山間の道路"><span></span></button>
+            <button type="button" data-go="4" aria-label="5枚目：補修後の橋"><span></span></button>
+          </div>
+        </div>
+        <p class="sr-only" data-status aria-live="polite"></p>
+      </section>
 
-                <div class="swiper-slide p-swiper-slide">
-                  <div class="p-mv__card-img">
-                    <img
-                      src="./img/drainage-team.webp"
-                      alt="女性と男性の３人が協力し、道路脇の排水設備を点検する"
-                    />
-                  </div>
-                  <div class="p-mv__text">
-                    <p class="p-mv__message">排水設備の整備</p>
-                    <h2 class="p-mv__department">
-                      雨の日の暮らしを、<br />足元から守る。
-                    </h2>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="p-fv__pagination"
-                role="group"
-                aria-label="メインビジュアルの表示切り替え"
+      <section class="p-news" id="news" aria-labelledby="news-title">
+        <div class="p-news__inner l-container">
+          <div class="c-heading p-news__heading">
+            <p class="c-section-heading-text">News</p>
+            <h2 class="c-heading-title" id="news-title">お知らせ</h2>
+          </div>
+          <div class="p-news__body">
+            <ul class="p-news__list">
+              <li class="p-news__item">
+                <a class="p-news__link" href="./news-safety.html">
+                  <span class="p-news__meta">
+                    <time class="p-news__date" datetime="2026-09-01"
+                      >2026.09.01</time
+                    >
+                    <span class="p-news__category">ニュース</span>
+                  </span>
+                  <h3 class="p-news__title">
+                    現場の安全意識を高める社内研修を実施しました
+                  </h3>
+                  <span class="p-news__arrow" aria-hidden="true">→</span>
+                </a>
+              </li>
+              <li class="p-news__item">
+                <a class="p-news__link" href="./news-opening.html">
+                  <span class="p-news__meta">
+                    <time class="p-news__date" datetime="2026-08-01"
+                      >2026.08.01</time
+                    >
+                    <span class="p-news__category">ニュース</span>
+                  </span>
+                  <h3 class="p-news__title">
+                    蒼建株式会社のホームページを公開しました
+                  </h3>
+                  <span class="p-news__arrow" aria-hidden="true">→</span>
+                </a>
+              </li>
+            </ul>
+            <div class="p-news__actions">
+              <a class="p-news__more c-action-button" href="./news.html"
+                ><span class="c-action-button__label">一覧はこちら</span
+                ><span class="c-action-button__icon" aria-hidden="true"
+                  >→</span
+                ></a
               >
-                <button
-                  class="hero__dot is-active"
-                  type="button"
-                  aria-label="1枚目、道路舗装工事を表示"
-                  aria-current="true"
-                  data-dot="0"
-                >
-                  <svg viewBox="0 0 32 32" aria-hidden="true">
-                    <circle
-                      class="hero__dot-track"
-                      cx="16"
-                      cy="16"
-                      r="13"
-                    ></circle>
-                    <circle
-                      class="hero__dot-progress"
-                      cx="16"
-                      cy="16"
-                      r="13"
-                      style="stroke-dashoffset: 81.6814"
-                    ></circle>
-                  </svg>
-                  <span aria-hidden="true"></span>
-                </button>
-
-                <button
-                  class="hero__dot"
-                  type="button"
-                  aria-label="2枚目、橋梁点検工事を表示"
-                  data-dot="1"
-                >
-                  <svg viewBox="0 0 32 32" aria-hidden="true">
-                    <circle
-                      class="hero__dot-track"
-                      cx="16"
-                      cy="16"
-                      r="13"
-                    ></circle>
-                    <circle
-                      class="hero__dot-progress"
-                      cx="16"
-                      cy="16"
-                      r="13"
-                      style="stroke-dashoffset: 81.6814"
-                    ></circle>
-                  </svg>
-                  <span aria-hidden="true"></span>
-                </button>
-
-                <button
-                  class="hero__dot"
-                  type="button"
-                  aria-label="3枚目、排水設備の整備を表示"
-                  data-dot="2"
-                >
-                  <svg viewBox="0 0 32 32" aria-hidden="true">
-                    <circle
-                      class="hero__dot-track"
-                      cx="16"
-                      cy="16"
-                      r="13"
-                    ></circle>
-                    <circle
-                      class="hero__dot-progress"
-                      cx="16"
-                      cy="16"
-                      r="13"
-                      style="stroke-dashoffset: 81.6814"
-                    ></circle>
-                  </svg>
-                  <span aria-hidden="true"></span>
-                </button>
-              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="p-numbers" aria-labelledby="numbers-title">
-        <div class="p-numbers__inner l-container">
-          <div class="c-heading p-numbers__heading">
-            <p class="c-section-heading-text">Soken in Numbers</p>
-            <h2 class="c-heading-title" id="numbers-title">数字で見る蒼建</h2>
+      <section class="soken-about" id="about" aria-labelledby="about-title">
+        <figure class="soken-about__visual">
+          <img
+            src="./img/recruit-city-pc-v1.webp"
+            alt="道路と橋、川が暮らしをつなぐ地域の街並み"
+            width="1920" height="800" loading="lazy"
+          />
+        </figure>
+        <div class="soken-about__inner">
+          <div class="soken-about__content">
+            <p class="soken-about__eyebrow">COMPANY</p>
+            <h2 class="soken-about__label" id="about-title">蒼建について</h2>
+            <h3 class="soken-about__title">暮らしのすぐそばで、<br />地域を支える会社です。</h3>
+            <p class="soken-about__description">道路・橋梁・排水設備の整備を通して、地域の安全な暮らしを支える会社です。一つひとつの現場に責任を持ち、街の当たり前をこれからも守り続けます。</p>
+            <a class="soken-about__link c-action-button" href="./company.html">
+              <span class="c-action-button__label">会社情報を見る</span><span class="c-action-button__icon" aria-hidden="true">→</span>
+            </a>
           </div>
-          <p class="p-numbers__intro">
-            地域の現場で積み重ねてきた歩みを、3つの数字でご紹介します。
-          </p>
-          <ul class="p-numbers__list">
-            <li class="p-numbers__card">
-              <p class="p-numbers__label">累計施工実績</p>
-              <svg class="p-numbers__icon" viewBox="0 -960 960 960" aria-hidden="true">
-                <path d="M159-169q-50 0-84.5-35T40-289v-240q0-33 23.5-56.5T120-609h200v-200h200q50 0 85 35t35 85v160h39v-47q0-16 6.5-31t17.5-26l77-76 179 340H759q-33 0-56.5-23.5T679-449h-40v70q20 17 30.5 40.5T680-289q0 50-35 85t-85 35q-38 0-69-22t-45-58H273q-14 36-45 58t-69 22Zm0-80q17 0 29-11.5t12-28.5q0-17-11.5-28.5T160-329q-17 0-28.5 11.5T120-289q0 17 11 28.5t28 11.5Zm401 0q17 0 28.5-11.5T600-289q0-17-11.5-28.5T560-329q-17 0-28.5 11.5T520-289q0 17 11.5 28.5T560-249Zm-240-80v-200H120v127q10-4 19.5-5.5T160-409q38 0 69 22t44 58h47Zm80 0h46q13-36 44.5-58t69.5-22v-40H400v120Zm427-120-67-127v127h67Zm-427-80h160v-160q0-17-11.5-28.5T520-729H400v200Zm-80 200v-80 7-127 200Zm80 0v-120 120Z" />
-              </svg>
-              <p class="p-numbers__value"><span class="p-numbers__figure">120</span><span class="p-numbers__unit">件</span></p>
-              <p class="p-numbers__detail">道路・橋梁・排水設備の工事</p>
-            </li>
-            <li class="p-numbers__card">
-              <p class="p-numbers__label">創業から</p>
-              <svg class="p-numbers__icon" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M3 21V7h4V3h10v8h4v10h-8v-4h-2v4zm2-2h2v-2H5zm0-4h2v-2H5zm0-4h2V9H5zm4 4h2v-2H9zm0-4h2V9H9zm0-4h2V5H9zm4 8h2v-2h-2zm0-4h2V9h-2zm0-4h2V5h-2zm4 12h2v-2h-2zm0-4h2v-2h-2z" />
-              </svg>
-              <p class="p-numbers__value"><span class="p-numbers__figure">20</span><span class="p-numbers__unit">年</span></p>
-              <p class="p-numbers__detail">2006年創業</p>
-            </li>
-            <li class="p-numbers__card">
-              <p class="p-numbers__label">有資格者</p>
-              <svg class="p-numbers__icon" viewBox="0 -960 960 960" aria-hidden="true">
-                <path d="m387-412 35-114-92-74h114l36-112 36 112h114l-93 74 35 114-92-71-93 71ZM240-40v-309q-38-42-59-96t-21-115q0-134 93-227t227-93q134 0 227 93t93 227q0 61-21 115t-59 96v309l-240-80-240 80Zm240-280q100 0 170-70t70-170q0-100-70-170t-170-70q-100 0-170 70t-70 170q0 100 70 170t170 70ZM320-159l160-41 160 41v-124q-35 20-75.5 31.5T480-240q-44 0-84.5-11.5T320-283v124Zm160-62Z" />
-              </svg>
-              <p class="p-numbers__value"><span class="p-numbers__figure">8</span><span class="p-numbers__unit">名</span></p>
-              <p class="p-numbers__detail">現場を支える専門資格</p>
-            </li>
-          </ul>
-          <p class="p-numbers__note">※数値は架空サイトの設定です（2026年9月時点）。</p>
         </div>
       </section>
 
@@ -430,205 +329,88 @@
         </div>
       </section>
 
-      <section class="p-about" id="about" aria-labelledby="about-title">
-        <div class="p-about__inner l-container">
-          <div class="p-about__content">
-            <div class="c-heading p-about__heading">
-              <p class="c-section-heading-text">About</p>
-              <h2 class="c-heading-title" id="about-title">蒼建について</h2>
-            </div>
-            <h3 class="p-about__text">
-              暮らしのすぐそばで、<br />地域を支える会社です。
-            </h3>
-            <p class="p-about__dsc">
-              道路・橋梁・排水設備の整備を通して、地域の安全な暮らしを支える会社です。一つひとつの現場に責任を持ち、街の当たり前をこれからも守り続けます。
-            </p>
-            <a href="./company.html" class="p-about-btn c-action-button"
-              ><span class="c-action-button__label">会社情報を見る</span
-              ><span class="c-action-button__icon" aria-hidden="true"
-                >→</span
-              ></a
-            >
+      <section class="soken-recruit" id="recruit" aria-labelledby="recruit-title">
+        <div class="soken-recruit__visual">
+          <img class="soken-recruit__photo"
+            src="./img/recruit-future-graduates-v1.png"
+            alt="白いヘルメットを着用し、橋と街並みの先を見据える新卒の二人の職員"
+            width="1536" height="1024" loading="lazy" />
+          <p class="soken-recruit__outline" aria-hidden="true">BUILD THE FUTURE</p>
+          <div class="soken-recruit__copy">
+            <h2 class="soken-recruit__headline" id="recruit-title"><span>あなたの仕事が、</span><span>この街の明日をつくる。</span></h2>
           </div>
-          <figure class="p-about__visual">
-            <img
-              src="./img/about-s-photo-v1.png"
-              alt="道路・橋梁・排水設備の現場で働く蒼建の社員"
-              width="1103"
-              height="1426"
-              loading="lazy"
-            />
-          </figure>
+        </div>
+        <div class="soken-recruit__action">
+          <a href="./recruit.html" class="soken-recruit__link c-action-button">
+            <span class="c-action-button__label">採用情報を見る</span>
+            <span class="c-action-button__icon" aria-hidden="true">→</span>
+          </a>
         </div>
       </section>
 
-      <section class="p-recruit" id="recruit" aria-labelledby="recruit-title">
-        <picture class="p-recruit__media">
-          <source
-            media="(min-width: 768px)"
-            srcset="./img/recruit-city-pc-v1.webp"
-          />
-          <img
-            src="./img/recruit-city-sp-v1.webp"
-            alt="道路と橋が暮らしをつなぐ地域の街並み"
-            width="780"
-            height="1200"
-            loading="lazy"
-          />
-        </picture>
-        <div class="p-recruit__inner l-container">
-          <div class="c-heading p-recruit__heading">
-            <p class="c-section-heading-text">Recruit</p>
-            <h2 class="c-heading-title" id="recruit-title">採用情報</h2>
-          </div>
-          <h3 class="p-recruit__text">
-            あなたの仕事が、<br />この街の明日をつくる。
-          </h3>
-          <p class="p-recruit__dsc">
-            道路も、橋も、雨の日の安心も。<br />私たちの仕事は、街の景色と暮らしを支えています。
-          </p>
-          <a href="./recruit.html" class="p-recruit-btn c-action-button"
-            ><span class="c-action-button__label">採用情報を見る</span
-            ><span class="c-action-button__icon" aria-hidden="true">→</span></a
-          >
-        </div>
-      </section>
-
-      <section class="p-news" id="news" aria-labelledby="news-title">
-        <div class="p-news__inner l-container">
-          <div class="c-heading p-news__heading">
-            <p class="c-section-heading-text">News</p>
-            <h2 class="c-heading-title" id="news-title">お知らせ</h2>
-          </div>
-          <div class="p-news__body">
-            <ul class="p-news__list">
-              <li class="p-news__item">
-                <a class="p-news__link" href="./news-safety.html">
-                  <span class="p-news__meta">
-                    <time class="p-news__date" datetime="2026-09-01"
-                      >2026.09.01</time
-                    >
-                    <span class="p-news__category">ニュース</span>
-                  </span>
-                  <h3 class="p-news__title">
-                    現場の安全意識を高める社内研修を実施しました
-                  </h3>
-                  <span class="p-news__arrow" aria-hidden="true">→</span>
-                </a>
-              </li>
-              <li class="p-news__item">
-                <a class="p-news__link" href="./news-opening.html">
-                  <span class="p-news__meta">
-                    <time class="p-news__date" datetime="2026-08-01"
-                      >2026.08.01</time
-                    >
-                    <span class="p-news__category">ニュース</span>
-                  </span>
-                  <h3 class="p-news__title">
-                    蒼建株式会社のホームページを公開しました
-                  </h3>
-                  <span class="p-news__arrow" aria-hidden="true">→</span>
-                </a>
-              </li>
-            </ul>
-            <div class="p-news__actions">
-              <a class="p-news__more c-action-button" href="./news.html"
-                ><span class="c-action-button__label">一覧はこちら</span
-                ><span class="c-action-button__icon" aria-hidden="true"
-                  >→</span
-                ></a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="p-contact" id="contact" aria-labelledby="contact-title">
-        <div class="p-contact__inner l-container">
-          <div class="c-heading p-contact__heading">
-            <p class="c-section-heading-text">Contact</p>
-            <h2 class="c-heading-title" id="contact-title">お問い合わせ</h2>
-          </div>
-          <div class="p-contact__body">
-            <p class="p-contact__dsc">
-              道路・橋梁・排水設備に関するご相談や、業務のご依頼はこちらからお問い合わせください。
-            </p>
-            <a href="./contact.html" class="p-contact-btn c-action-button"
-              ><span class="c-action-button__label">お問い合わせフォームへ</span
-              ><span class="c-action-button__icon" aria-hidden="true"
-                >→</span
-              ></a
-            >
-          </div>
-        </div>
-      </section>
+      <!-- お問い合わせは共通フッターに統合 -->
     </main>
 
-    <a class="p-recruit-fixed" href="./recruit.html">
-      <span>採用情報を見る</span>
-      <svg class="p-recruit-fixed__icon" viewBox="0 0 32 28" aria-hidden="true" focusable="false">
-        <rect x="6" y="2" width="24" height="20" />
-        <rect x="2" y="6" width="24" height="20" />
-      </svg>
+    <a class="p-recruit-fixed c-action-button" href="./recruit.html">
+      <span class="c-action-button__label">採用情報を見る</span>
+      <span class="c-action-button__icon" aria-hidden="true">→</span>
     </a>
 
     <!-- footer -->
-    <footer class="l-footer">
-      <div class="l-footer__inner l-container">
-        <div class="l-footer__top">
-          <a href="./" class="l-footer__logo">蒼建株式会社</a>
-          <nav class="l-footer__nav" aria-label="フッターナビゲーション">
-            <ul class="l-footer-nav">
-              <li>
-                <a href="./"
-                  ><span>トップページ</span><span aria-hidden="true">→</span></a
-                >
-              </li>
-              <li>
-                <a href="./business.html"
-                  ><span>事業紹介</span><span aria-hidden="true">→</span></a
-                >
-              </li>
-              <li>
-                <a href="./works.html"
-                  ><span>施工実績</span><span aria-hidden="true">→</span></a
-                >
-              </li>
-              <li>
-                <a href="./company.html"
-                  ><span>会社概要</span><span aria-hidden="true">→</span></a
-                >
-              </li>
-              <li>
-                <a href="./recruit.html"
-                  ><span>採用情報</span><span aria-hidden="true">→</span></a
-                >
-              </li>
-              <li>
-                <a href="./contact.html"
-                  ><span>お問い合わせ</span><span aria-hidden="true">→</span></a
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="l-footer__bottom">
-          <div class="l-footer__meta">
-            <p class="l-footer__note">自主制作の架空サイトです。</p>
-            <p class="l-footer__copyright">
-              <small>© 2026 蒼建株式会社</small>
-            </p>
-          </div>
-          <a
-            class="l-footer__page-top"
-            href="#main"
-            aria-label="ページ上部へ戻る"
-          >
-            <span aria-hidden="true">↑</span>
-          </a>
-        </div>
+<footer class="soken-footer">
+  <div class="soken-footer__inner">
+    <div class="soken-footer__top">
+      <section class="soken-footer__company" id="contact" aria-label="蒼建株式会社へのお問い合わせ">
+        <a class="soken-brand soken-footer__brand" href="./index.html" aria-label="蒼建株式会社 トップページ">
+          <span class="soken-brand__crop" aria-hidden="true">
+  <img class="soken-brand__image" src="./img/brand/soken-road-logo-v2.png" alt="" width="1942" height="809" decoding="async" />
+</span>
+        </a>
+        <p class="soken-footer__intro">道路・橋梁・排水設備の整備を通して、<br />地域の暮らしを支えています。</p>
+        <p class="soken-footer__contact-text">工事のご相談や業務のご依頼など、<br />お気軽にお問い合わせください。</p>
+        <a class="soken-footer__contact c-action-button" href="./contact.html">
+          <span class="c-action-button__label">お問い合わせ</span>
+          <span class="c-action-button__icon" aria-hidden="true">→</span>
+        </a>
+      </section>
+      <nav class="soken-footer__nav" aria-label="フッターナビゲーション">
+        <details class="soken-footer__group" open>
+          <summary>会社情報</summary>
+          <ul>
+            <li><a href="./company.html">蒼建について</a></li>
+            <li><a href="./company.html#company-profile">会社概要</a></li>
+          </ul>
+        </details>
+        <details class="soken-footer__group" open>
+          <summary>事業紹介</summary>
+          <ul>
+            <li><a href="./business.html">私たちの仕事</a></li>
+            <li><a href="./business.html#road">道路工事</a></li>
+            <li><a href="./business.html#bridge">橋梁の点検・整備</a></li>
+            <li><a href="./business.html#drainage">排水設備の整備</a></li>
+          </ul>
+        </details>
+        <ul class="soken-footer__links">
+          <li><a href="./index.html">トップページ</a></li>
+          <li><a href="./works.html">施工実績</a></li>
+          <li><a href="./recruit.html">採用情報</a></li>
+          <li><a href="./news.html">お知らせ</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="soken-footer__bottom">
+      <div class="soken-footer__meta">
+        <a class="soken-footer__privacy" href="./privacy.html">プライバシーポリシー</a>
+        <p>自主制作の架空サイトです。</p>
+        <p class="soken-footer__copyright"><small>© 2026 蒼建株式会社</small></p>
       </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-  </body>
+      <a class="soken-footer__page-top" href="#" aria-label="ページ上部へ戻る"><span aria-hidden="true">↑</span></a>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js?ver=12"></script>
+<script src="./assets/js/main.js?ver=1790420725"></script>
+<script src="./assets/js/site-footer.js?ver=1790925462"></script>
+<script src="./assets/js/home-hero.js?ver=1790920239"></script>
+</body>
 </html>

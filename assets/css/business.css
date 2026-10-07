@@ -12,7 +12,7 @@
 
 .p-business-heading .c-section-heading-text {
   color: var(--blue);
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 1.6;
   letter-spacing: .045em;
@@ -34,7 +34,7 @@
 .p-business-breadcrumb {
   padding-block: 20px 32px;
   color: var(--muted);
-  font-size: 18px;
+  font-size: 12px;
 }
 
 .p-business-breadcrumb ol {
@@ -67,7 +67,7 @@
 .p-business-intro__text {
   margin-top: 16px;
   color: var(--ink);
-  font-size: 18px;
+  font-size: 15px;
   line-height: 2;
 }
 
@@ -132,7 +132,7 @@
 .p-business-service__body > p {
   margin-top: 16px;
   color: var(--ink);
-  font-size: 18px;
+  font-size: 15px;
   line-height: 2;
 }
 
@@ -175,11 +175,11 @@
 
 .p-business-project__text > span {
   color: var(--blue);
-  font-size: 18px;
+  font-size: 12px;
 }
 
 .p-business-project__text strong {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.7;
 }
 
@@ -202,7 +202,7 @@
 .p-business-flow__intro {
   margin-top: 20px;
   color: var(--ink);
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .p-business-flow__list {
@@ -230,20 +230,20 @@
 }
 
 .p-business-flow__list h3 {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.8;
 }
 
 .p-business-flow__list p {
   margin-top: 8px;
   color: var(--muted);
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.8;
 }
 
 .p-business-note {
   margin-top: 24px;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.8;
 }
 
@@ -368,7 +368,7 @@
   }
 
   .p-business-service__body > p {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .p-business-service__visual {
@@ -393,7 +393,7 @@
   }
 
   .p-business-intro__text {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .p-business-pc-break {
@@ -416,6 +416,6 @@
   }
 
   .p-business-flow__list h3 {
-    font-size: 18px;
+    font-size: 16px;
   }
 }

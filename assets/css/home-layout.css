@@ -1,0 +1,159 @@
+/* 添付参考の構成：PCは写真の右に文章、SPは写真の下に白い文章パネル。 */
+.soken-about {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #eef3f6;
+  color: #142c3e;
+}
+.soken-about__visual { position: absolute; inset: 0; margin: 0; z-index: -2; }
+.soken-about__visual img {
+  display: block;
+  width: 76%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 48% center;
+}
+.soken-about::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(90deg, transparent 36%, rgb(238 243 246 / 12%) 47%, rgb(238 243 246 / 94%) 64%, #eef3f6 80%);
+}
+.soken-about__inner {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+  width: min(100% - 96px, 1320px);
+  min-height: clamp(600px, 48vw, 730px);
+  margin-inline: auto;
+  padding-block: 80px;
+}
+.soken-about__content { grid-column: 2; padding-left: 16px; }
+.soken-about__eyebrow { margin: 0; color: #187fb9; font-size: 13px; font-weight: 700; line-height: 1.5; letter-spacing: .12em; }
+.soken-about__label { margin: 10px 0 24px; font-size: 16px; font-weight: 500; line-height: 1.6; letter-spacing: .1em; }
+.soken-about__title { margin: 0; font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; font-size: clamp(27px, 2.35vw, 38px); font-weight: 400; line-height: 1.8; letter-spacing: .02em; }
+.soken-about__description { max-width: 29em; margin: 24px 0 0; color: #263640; font-size: 15px; line-height: 2.15; }
+.soken-about__link { margin-top: 36px; }
+@media (max-width: 1000px) and (min-width: 801px) {
+  .soken-about__inner { grid-template-columns: 54% 46%; width: calc(100% - 64px); }
+  .soken-about::before { background: linear-gradient(90deg, transparent 28%, rgb(238 243 246 / 95%) 58%, #eef3f6 80%); }
+  .soken-about__title { font-size: 28px; }
+}
+@media (max-width: 800px) {
+  .soken-about { background: #fff; }
+  .soken-about::before { display: none; }
+  .soken-about__visual { position: relative; inset: auto; z-index: auto; width: 100%; }
+  .soken-about__visual img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; object-position: center; }
+  .soken-about__inner { display: block; width: 100%; min-height: 0; padding: 36px 28px 52px; }
+  .soken-about__content { padding: 0; max-width: 580px; margin: auto; }
+  .soken-about__eyebrow { font-size: 12px; }
+  .soken-about__label { margin: 8px 0 20px; font-size: 14px; }
+  .soken-about__title { font-size: clamp(25px, 4.8vw, 34px); line-height: 1.8; letter-spacing: 0; }
+  .soken-about__description { margin-top: 20px; max-width: none; font-size: 14px; line-height: 2; }
+  .soken-about__link { margin-top: 28px; }
+}
+@media (max-width: 360px) {
+  .soken-about__inner { padding-inline: 20px; }
+  .soken-about__title { font-size: 23px; }
+}
+@media (prefers-reduced-motion: reduce) { .soken-about__link { transition: none; } }
+
+/* 採用：人物写真に大きなコピー。CTAはPC右下、SPは写真の下。 */
+.soken-recruit {
+  position: relative;
+  margin: 0;
+  padding: 16px;
+  background: #fff;
+}
+.soken-recruit__visual {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  min-height: 660px;
+  height: min(62vw, 920px);
+  background: #23475b;
+}
+.soken-recruit__photo {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+}
+.soken-recruit__visual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, rgb(8 28 47 / 8%) 30%, rgb(8 28 47 / 10%) 48%, rgb(8 28 47 / 67%) 100%);
+}
+.soken-recruit__outline {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: clamp(42px, 7.8vw, 140px);
+  font-weight: 700;
+  letter-spacing: .055em;
+  line-height: 1.1;
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(255 255 255 / 70%);
+  white-space: nowrap;
+}
+.soken-recruit__copy {
+  position: absolute;
+  left: 3%;
+  bottom: 54px;
+  width: 70%;
+  color: #fff;
+}
+.soken-recruit__label { margin: 0 0 16px; font-size: 16px; font-weight: 600; letter-spacing: .14em; }
+.soken-recruit__headline {
+  margin: 0;
+  font-size: clamp(38px, 4.7vw, 84px);
+  font-weight: 800;
+  line-height: 1.5;
+  letter-spacing: -.025em;
+  text-shadow: 0 2px 14px rgb(8 28 47 / 14%);
+}
+.soken-recruit__headline span { display: block; }
+.soken-recruit__description { margin: 18px 0 0; font-size: 14px; line-height: 1.9; }
+.soken-recruit__action {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  width: 31%;
+  padding: 28px;
+  background: #fff;
+}
+.soken-recruit__action .c-action-button { width: 100%; min-height: 90px; padding-inline: 48px; color: #187fb9; }
+@media (max-width: 1000px) and (min-width: 801px) {
+  .soken-recruit__visual { min-height: 620px; }
+  .soken-recruit__copy { bottom: 130px; width: 90%; }
+  .soken-recruit__action { width: 40%; padding: 18px; }
+  .soken-recruit__action .c-action-button { min-height: 72px; }
+}
+@media (max-width: 800px) {
+  .soken-recruit { padding: 16px 20px 0; }
+  .soken-recruit__visual { min-height: 0; height: auto; aspect-ratio: 3 / 4; }
+  .soken-recruit__photo { object-position: 46% center; }
+  .soken-recruit__outline { top: 14px; padding-inline: 10px; font-size: clamp(29px, 7vw, 52px); white-space: normal; line-height: 1.15; letter-spacing: .06em; }
+  .soken-recruit__copy { left: 5%; bottom: 22px; width: 90%; }
+  .soken-recruit__label { margin-bottom: 10px; font-size: 12px; }
+  .soken-recruit__headline { font-size: clamp(24px, 7vw, 52px); line-height: 1.55; letter-spacing: -.04em; }
+  .soken-recruit__description { margin-top: 14px; font-size: clamp(10px, 2.7vw, 14px); line-height: 1.8; }
+  .soken-recruit__action { position: static; width: 100%; padding: 24px 0 40px; }
+  .soken-recruit__action .c-action-button { min-height: 72px; }
+}
+@media (max-width: 360px) {
+  .soken-recruit { padding-inline: 14px; }
+  .soken-recruit__visual { aspect-ratio: 3 / 4.5; }
+  .soken-recruit__headline { font-size: 23px; }
+}

@@ -75,7 +75,7 @@
       try {
         sessionStorage.setItem(key, JSON.stringify(data));
         sessionStorage.removeItem(completedKey);
-        location.assign("./contact-confirm.html");
+        location.assign(form.dataset.confirmUrl);
       } catch {
         summary.textContent = "ブラウザの一時保存が利用できません。サイトデータの保存設定をご確認ください。入力内容は送信されていません。";
         summary.hidden = false;
@@ -92,7 +92,7 @@
       const ready = valid(data);
       confirm.hidden = !ready;
       // 案内ボックス削除後は、確認できるデータがなければ入力画面へ戻す。
-      if (!ready) { location.replace("./contact.html"); return; }
+      if (!ready) { location.replace(confirm.dataset.inputUrl); return; }
       const dl = document.querySelector("[data-confirm-values]");
       dl.replaceChildren();
       if (ready) Object.entries(labels).forEach(([k, label]) => {
@@ -109,7 +109,7 @@
       let ready = false;
       try { ready = sessionStorage.getItem(completedKey) === "true"; } catch {}
       complete.hidden = !ready;
-      if (!ready) { location.replace("./contact.html"); return; }
+      if (!ready) { location.replace(complete.dataset.inputUrl); return; }
     }
   };
   update();
@@ -119,7 +119,7 @@
     try {
       sessionStorage.removeItem(key);
       sessionStorage.setItem(completedKey, "true");
-      location.assign("./contact-complete.html");
+      location.assign(confirm.dataset.completeUrl);
     } catch {
       let error = document.querySelector("[data-contact-storage-error]");
       if (!error) {
