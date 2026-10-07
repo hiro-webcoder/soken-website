@@ -12,7 +12,7 @@
 .soken-home .site-header { position: absolute; inset: 0 0 auto; z-index: 10; display: flex; align-items: center; justify-content: space-between; gap: 40px; padding: 35px 3.2%; min-height: 112px; }
 .soken-home .brand { flex-shrink: 0; font-size: clamp(23px, 2.1vw, 32px); font-weight: 700; letter-spacing: .035em; line-height: 1.4; text-shadow: 0 1px 12px #08243766; }
 .soken-home .navigation ul { display: flex; align-items: center; gap: clamp(24px, 2.8vw, 50px); margin: 0; padding: 0; list-style: none; }
-.soken-home .navigation a { display: block; position: relative; padding: 12px 0; font-size: 14px; font-weight: 600; letter-spacing: .08em; white-space: nowrap; text-shadow: 0 1px 12px #08243799; }
+.soken-home .navigation a { display: block; position: relative; padding: 12px 0; font-size: 18px; font-weight: 600; letter-spacing: .08em; white-space: nowrap; text-shadow: 0 1px 12px #08243799; }
 .soken-home .navigation a::after { content: ""; position: absolute; bottom: 3px; left: 0; height: 1px; width: 100%; background: currentColor; transform: scaleX(0); transform-origin: left; transition: transform .25s; }
 .soken-home .navigation a:hover::after, .soken-home .navigation a:focus-visible::after { transform: scaleX(1); }
 .soken-home .menu-toggle { display: none; }
@@ -46,7 +46,7 @@
   .soken-home .menu-toggle[aria-expanded="true"] span:last-child { transform: translateY(-9px) rotate(-45deg); }
   .soken-home .navigation { position: absolute; inset: 0 0 auto; padding: 100px 28px 35px; background: #14394bf5; box-shadow: 0 14px 24px #09253626; }
   .soken-home .navigation ul { align-items: stretch; flex-direction: column; gap: 0; }
-  .soken-home .navigation a { font-size: 17px; padding: 17px 0; border-bottom: 1px solid #ffffff26; }
+  .soken-home .navigation a { font-size: 18px; padding: 17px 0; border-bottom: 1px solid #ffffff26; }
   .soken-home .site-header.menu-open .brand { position: relative; z-index: 12; }
   .soken-home .hero__copy { width: calc(100% - 88px); top: 48%; }
   .soken-home .hero__copy h1 { font-size: clamp(30px, 5.1vw, 44px); line-height: 1.9; letter-spacing: .09em; }

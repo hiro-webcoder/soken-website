@@ -61,7 +61,7 @@
   margin: 0;
   padding: 0 0 16px;
   list-style: none;
-  font-size: 12px;
+  font-size: 18px;
   line-height: 1.6;
   color: var(--ink);
 }
@@ -156,7 +156,7 @@
     position: relative;
     min-height: 36px;
     padding: 4px 0;
-    font-size: clamp(14px, 1.1vw, 18px);
+    font-size: clamp(18px, 1.1vw, 18px);
     white-space: nowrap;
   }
 

@@ -31,10 +31,10 @@
   padding-block: 80px;
 }
 .soken-about__content { grid-column: 2; padding-left: 16px; }
-.soken-about__eyebrow { margin: 0; color: #187fb9; font-size: 13px; font-weight: 700; line-height: 1.5; letter-spacing: .12em; }
-.soken-about__label { margin: 10px 0 24px; font-size: 16px; font-weight: 500; line-height: 1.6; letter-spacing: .1em; }
+.soken-about__eyebrow { margin: 0; color: #187fb9; font-size: 18px; font-weight: 700; line-height: 1.5; letter-spacing: .12em; }
+.soken-about__label { margin: 10px 0 24px; font-size: 18px; font-weight: 500; line-height: 1.6; letter-spacing: .1em; }
 .soken-about__title { margin: 0; font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; font-size: clamp(27px, 2.35vw, 38px); font-weight: 400; line-height: 1.8; letter-spacing: .02em; }
-.soken-about__description { max-width: 29em; margin: 24px 0 0; color: #263640; font-size: 15px; line-height: 2.15; }
+.soken-about__description { max-width: 29em; margin: 24px 0 0; color: #263640; font-size: 18px; line-height: 2.15; }
 .soken-about__link { margin-top: 36px; }
 @media (max-width: 1000px) and (min-width: 801px) {
   .soken-about__inner { grid-template-columns: 54% 46%; width: calc(100% - 64px); }
@@ -48,10 +48,10 @@
   .soken-about__visual img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; object-position: center; }
   .soken-about__inner { display: block; width: 100%; min-height: 0; padding: 36px 28px 52px; }
   .soken-about__content { padding: 0; max-width: 580px; margin: auto; }
-  .soken-about__eyebrow { font-size: 12px; }
-  .soken-about__label { margin: 8px 0 20px; font-size: 14px; }
+  .soken-about__eyebrow { font-size: 18px; }
+  .soken-about__label { margin: 8px 0 20px; font-size: 18px; }
   .soken-about__title { font-size: clamp(25px, 4.8vw, 34px); line-height: 1.8; letter-spacing: 0; }
-  .soken-about__description { margin-top: 20px; max-width: none; font-size: 14px; line-height: 2; }
+  .soken-about__description { margin-top: 20px; max-width: none; font-size: 18px; line-height: 2; }
   .soken-about__link { margin-top: 28px; }
 }
 @media (max-width: 360px) {
@@ -114,7 +114,7 @@
   width: 70%;
   color: #fff;
 }
-.soken-recruit__label { margin: 0 0 16px; font-size: 16px; font-weight: 600; letter-spacing: .14em; }
+.soken-recruit__label { margin: 0 0 16px; font-size: 18px; font-weight: 600; letter-spacing: .14em; }
 .soken-recruit__headline {
   margin: 0;
   font-size: clamp(38px, 4.7vw, 84px);
@@ -124,7 +124,7 @@
   text-shadow: 0 2px 14px rgb(8 28 47 / 14%);
 }
 .soken-recruit__headline span { display: block; }
-.soken-recruit__description { margin: 18px 0 0; font-size: 14px; line-height: 1.9; }
+.soken-recruit__description { margin: 18px 0 0; font-size: 18px; line-height: 1.9; }
 .soken-recruit__action {
   position: absolute;
   right: 16px;
@@ -133,7 +133,7 @@
   padding: 28px;
   background: #fff;
 }
-.soken-recruit__action .c-action-button { width: 100%; min-height: 90px; padding-inline: 48px; color: #187fb9; }
+.soken-recruit__action .c-action-button { --button-ink: #187fb9; width: 100%; min-height: 90px; padding-inline: 48px; }
 @media (max-width: 1000px) and (min-width: 801px) {
   .soken-recruit__visual { min-height: 620px; }
   .soken-recruit__copy { bottom: 130px; width: 90%; }
@@ -146,9 +146,9 @@
   .soken-recruit__photo { object-position: 46% center; }
   .soken-recruit__outline { top: 14px; padding-inline: 10px; font-size: clamp(29px, 7vw, 52px); white-space: normal; line-height: 1.15; letter-spacing: .06em; }
   .soken-recruit__copy { left: 5%; bottom: 22px; width: 90%; }
-  .soken-recruit__label { margin-bottom: 10px; font-size: 12px; }
+  .soken-recruit__label { margin-bottom: 10px; font-size: 18px; }
   .soken-recruit__headline { font-size: clamp(24px, 7vw, 52px); line-height: 1.55; letter-spacing: -.04em; }
-  .soken-recruit__description { margin-top: 14px; font-size: clamp(10px, 2.7vw, 14px); line-height: 1.8; }
+  .soken-recruit__description { margin-top: 14px; font-size: clamp(18px, 2.7vw, 18px); line-height: 1.8; }
   .soken-recruit__action { position: static; width: 100%; padding: 24px 0 40px; }
   .soken-recruit__action .c-action-button { min-height: 72px; }
 }

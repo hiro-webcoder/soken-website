@@ -2,6 +2,7 @@
 
 /* 文字付きCTA共通。ナビゲーション・絞り込み・スライド操作は対象外。 */
 .c-action-button:is(a, button) {
+  --button-ink: #142c3e;
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -18,16 +19,16 @@
   border: 1px solid #a4b3bf;
   border-radius: 0;
   background: #fff;
-  color: #142c3e;
+  color: var(--button-ink);
   font-family: inherit;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 1.7;
   text-align: center;
   text-decoration: none;
   white-space: normal;
   cursor: pointer;
-  transition: background-color .2s ease, border-color .2s ease;
+  transition: background-color .2s ease, border-color .2s ease, color .2s ease;
 }
 .c-action-button__label {
   display: block;
@@ -48,7 +49,7 @@
   border-radius: 0;
   background: transparent;
   color: #8195a4;
-  font-size: 0;
+  font-size: 0; /* 矢印は疑似要素で描くため、重複する記号だけ非表示。 */
   line-height: 1;
   transform: translateY(-50%);
 }
@@ -72,10 +73,13 @@
   border-right: 1px solid currentColor;
   transform: rotate(45deg);
 }
-.c-action-button:is(a, button):hover {
-  background: #f0f5f8;
-  border-color: #6d879b;
-  color: #142c3e;
+.c-action-button:is(a, button):is(:hover, :focus-visible):not(:disabled) {
+  background: var(--button-ink);
+  border-color: var(--button-ink);
+  color: #fff;
+}
+.c-action-button:is(a, button):is(:hover, :focus-visible):not(:disabled) > .c-action-button__icon {
+  color: inherit;
 }
 .c-action-button:is(a, button):focus-visible {
   outline: 3px solid #187fb9;
@@ -101,7 +105,7 @@
     width: 100%;
     min-height: 64px;
     padding: 18px 48px;
-    font-size: 14px;
+    font-size: 18px;
   }
   .c-action-button > .c-action-button__icon { right: 22px; }
   .p-recruit-fixed.c-action-button {
